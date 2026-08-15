@@ -166,3 +166,47 @@
     input.focus();
   });
 })();
+
+/* ── Tally contact form ──────────────────────────────────────────────────────
+   Only the support page carries a [data-tally-src] iframe, so this is a no-op
+   everywhere else and costs nothing on the other 89 pages — no script is
+   fetched unless the form is actually present.
+
+   It lives here rather than beside the iframe in support.md because the
+   Markdown renderer escapes <script> blocks; an inline one printed its own
+   source onto the page instead of running.
+
+   The point of it is the inner scrollbar. The form is about 900px tall at the
+   width it renders at, taller on a phone or after a validation error, and
+   short after submitting — so any fixed frame height either clips it or leaves
+   a gap. dynamicHeight=1 makes the form report its height and embed.js resizes
+   the frame to match.
+
+   If embed.js fails to load, the fallback copies data-tally-src to src, so the
+   form still appears — just at its fixed height, with the scrollbar back. */
+(function () {
+  var frames = document.querySelectorAll('iframe[data-tally-src]');
+  if (!frames.length) return;
+
+  var SRC = 'https://tally.so/widgets/embed.js';
+
+  /* Set src ourselves rather than leaving it to Tally.loadEmbeds(). The
+     documented flow is to let loadEmbeds() claim [data-tally-src] frames, but
+     it was observed not to — the frame stayed blank with no src and no error.
+     Assigning it directly always works, and costs nothing when the script is
+     healthy. The frame is still marked data-tally-src so embed.js recognises
+     it for the resize messages. */
+  frames.forEach(function (frame) {
+    if (!frame.getAttribute('src')) frame.src = frame.dataset.tallySrc;
+  });
+
+  if (typeof Tally !== 'undefined') return Tally.loadEmbeds();
+  if (document.querySelector('script[src="' + SRC + '"]')) return;
+
+  var s = document.createElement('script');
+  s.src = SRC;
+  s.onload = function () {
+    if (typeof Tally !== 'undefined') Tally.loadEmbeds();
+  };
+  document.body.appendChild(s);
+})();

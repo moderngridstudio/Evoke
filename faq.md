@@ -118,4 +118,4 @@ No. Everything documented here is built in. Review apps and translation apps are
 
 ## Still stuck?
 
-[Contact support](support.md) — we reply within two business days.
+[Contact support](support.md) — we reply within a few business days.

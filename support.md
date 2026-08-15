@@ -12,14 +12,24 @@
 
 The fastest way to reach us is the form below. It works on phones and tablets as well as desktop.
 
-<!-- Embed a free form here — Tally, Google Forms and Notion forms are all
-     mobile-friendly by default. Replace the src with your own form URL.
-     Keep the iframe: Shopify requires a working contact form on this page. -->
+<!-- Keep the iframe: Shopify requires a working contact form on this page.
+
+     No height attribute — .support-form in docs.css sets it per breakpoint.
+     The form gets taller as it gets narrower, because the paired fields stack:
+     907px at the ~565px it renders at on desktop, 979px at 375px, 1003px at
+     320px. A single height that cleared the widest case left a gap on desktop,
+     and one that fitted desktop put a scrollbar back on phones.
+
+     dynamicHeight=1 and the loader in assets/docs.js still apply on top, for
+     the cases no fixed height can predict: a validation error growing the
+     form, or the short thank-you after submitting. The CSS is what guarantees
+     no scrollbar if that resize never fires. -->
 
 <iframe
-  src="{{ SUPPORT_FORM_EMBED_URL }}"
+  class="support-form"
+  data-tally-src="{{ SUPPORT_FORM_EMBED_URL }}"
+  loading="lazy"
   width="100%"
-  height="600"
   frameborder="0"
   marginheight="0"
   marginwidth="0"
@@ -27,13 +37,18 @@ The fastest way to reach us is the form below. It works on phones and tablets as
   Loading…
 </iframe>
 
+<!-- The loader lives in assets/docs.js, not here: the Markdown renderer escapes
+     <script> blocks, so an inline one would print itself onto the page as text
+     instead of running. -->
+
+
 Prefer email? Write to **{{ SUPPORT_EMAIL }}**.
 
 ---
 
 ## Response times
 
-We reply to every request within **two business days**.
+We reply to every request within **a few business days**.
 
 Business days are Monday to Friday, excluding public holidays in {{ YOUR_COUNTRY }}. Requests sent over a weekend are answered on the next business day.
 

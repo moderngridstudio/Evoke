@@ -9,8 +9,9 @@
   "company": "Modern Grid",
 
   "supportEmail": "moderngrid.studio@gmail.com",
-  "contactFormUrl": "TODO_CONTACT_FORM_URL",
-  "country": "TODO_COUNTRY",
+  "_contactForm_comment": "Tally's INLINE embed, not the popup. The popup needs an external script and hides the form behind a button; a support page should show it. hideTitle=1 because support.md already has a Contact us heading.",
+  "contactFormUrl": "https://tally.so/embed/obN8AO?alignLeft=1&hideTitle=1&dynamicHeight=1",
+  "country": "India",
 
   "themeStoreUrl": "TODO_THEME_STORE_URL",
 

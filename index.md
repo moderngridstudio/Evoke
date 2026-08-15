@@ -2,7 +2,7 @@
 
 Evoke is a Shopify theme for stores that sell through composition and detail: editorial layouts, generous space, and product storytelling that stays out of the way of the product.
 
-This site is the full documentation. If you can't find an answer here, [contact support](support.md) — we reply within two business days.
+This site is the full documentation. If you can't find an answer here, [contact support](support.md) — we reply within a few business days.
 
 ---
 
