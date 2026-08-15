@@ -2,14 +2,13 @@
   "_comment": "Everything the docs site needs that is not in the Markdown. Values starting with 'TODO' are placeholders — build.js prints a warning for each one that is still unfilled, and they render visibly on the site so they cannot ship by accident.",
 
   "themeName": "Evoke",
-  "tagline": "Common questions and support documentation",
-  "heroSubtitle": "Everything you need to set up, customize and run the Evoke theme. Search below, or pick a category to browse.",
+  "tagline": "Everything you need to run Evoke",
+  "heroSubtitle": "Set up, customize and get the most out of the Evoke theme. Search below, or pick a category to browse.",
 
-  "company": "TODO_COMPANY_NAME",
-  "companyShort": "TODO_COMPANY_SHORT",
-  "companyUrl": "TODO_COMPANY_URL",
+  "_company_comment": "companyShort and companyUrl were removed — nothing rendered them. If Modern Grid gets its own site, add companyUrl back and the footer name can link to it.",
+  "company": "Modern Grid",
 
-  "supportEmail": "TODO_SUPPORT_EMAIL",
+  "supportEmail": "moderngrid.studio@gmail.com",
   "contactFormUrl": "TODO_CONTACT_FORM_URL",
   "country": "TODO_COUNTRY",
 

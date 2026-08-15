@@ -1,4 +1,4 @@
-# ModernGrid_Evoke
+# Evoke — theme documentation
 
 The documentation website for the Evoke Shopify theme.
 
@@ -42,11 +42,24 @@ Then open <http://localhost:4321>. Both scripts are plain Node with **zero
 dependencies** — there is no `npm install` step.
 
 After any change to the theme's schemas, regenerate the reference pages first.
-Run this one **from the theme root** (`Evoke/`):
+`gen-docs.js` reads the theme's `sections/`, `config/` and `locales/` from the
+working directory, so run it **from the theme root** and point it at this repo.
+
+This repo and the theme live on different drives, so the paths are absolute:
 
 ```bash
-node ../ModernGrid_Evoke/gen-docs.js ../ModernGrid_Evoke
+cd /d D:\Web\Shopify\Evoke && node C:\Users\Khushal\Documents\ModernGrid\Evoke\gen-docs.js C:\Users\Khushal\Documents\ModernGrid\Evoke
 ```
+
+Then rebuild the site from this folder:
+
+```bash
+node build.js docs
+```
+
+`sections-reference.md` and `theme-settings.md` are the generated files. If they
+ever look stale, it is because that first command hasn't been run since the
+theme changed.
 
 ## Before this goes live
 
@@ -56,8 +69,6 @@ Values beginning with `TODO` are placeholders:
 | Key | What it is |
 |---|---|
 | `company` | Your company or author name — appears in the footer |
-| `companyShort` | Short form, for tight spaces |
-| `companyUrl` | Your main site |
 | `supportEmail` | A real inbox you monitor |
 | `contactFormUrl` | Embed URL for a free form — Tally, Google Forms and Notion all work |
 | `country` | Used to define "business days" on the response-times page |
@@ -74,13 +85,14 @@ token name to config key is the `TOKENS` table at the top of `build.js`.
 
 ## Publishing on GitHub Pages (free, no domain needed)
 
-1. Create a public repo, e.g. `ModernGrid_Evoke`
+1. Create a **public** repo, e.g. `Evoke` (Pages is free only on public repos —
+   on a private one GitHub disables it and offers a paid upgrade instead)
 2. Run `node build.js docs` (this is the default output — `docs/` is one of only
    two folders GitHub Pages can serve from)
 3. Push this folder to the repo
 4. Repo **Settings → Pages → Source: Deploy from a branch**, branch `main`,
    folder `/docs`
-5. The site publishes at `https://<username>.github.io/ModernGrid_Evoke/`
+5. The site publishes at <https://moderngridstudio.github.io/Evoke/>
 
 Nothing needs configuring for the subdirectory. The output is entirely
 page-relative, so the same build serves correctly from a project subdirectory,
