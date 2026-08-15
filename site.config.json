@@ -1,0 +1,21 @@
+{
+  "_comment": "Everything the docs site needs that is not in the Markdown. Values starting with 'TODO' are placeholders — build.js prints a warning for each one that is still unfilled, and they render visibly on the site so they cannot ship by accident.",
+
+  "themeName": "Evoke",
+  "tagline": "Common questions and support documentation",
+  "heroSubtitle": "Everything you need to set up, customize and run the Evoke theme. Search below, or pick a category to browse.",
+
+  "company": "TODO_COMPANY_NAME",
+  "companyShort": "TODO_COMPANY_SHORT",
+  "companyUrl": "TODO_COMPANY_URL",
+
+  "supportEmail": "TODO_SUPPORT_EMAIL",
+  "contactFormUrl": "TODO_CONTACT_FORM_URL",
+  "country": "TODO_COUNTRY",
+
+  "themeStoreUrl": "TODO_THEME_STORE_URL",
+
+  "copyrightStartYear": 2026,
+
+  "_paths_comment": "There is no baseHref setting. Every link and asset is written as a page-relative path, so the same build works opened straight off disk, at a domain root, and in a GitHub Pages project subdirectory — with nothing to configure."
+}
