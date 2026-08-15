@@ -225,13 +225,42 @@ img { max-width: 100%; height: auto; }
 
 /* ── Category cards ────────────────────────────────────────────────────── */
 
+/* The 1px gap is the container's background showing between cards, which is
+   what draws the hairline rules. The catch is that an empty cell shows it too
+   — so a row that doesn't fill leaves a solid block that reads as a broken
+   card, not as space.
+
+   auto-fit made that likely rather than rare: it fitted four columns at this
+   content width, so five categories left three empty cells side by side. A
+   fixed column count is predictable enough to correct for, and three columns
+   also gives the blurbs a readable measure instead of wrapping them to four
+   lines. */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
   margin-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+/* With a known column count, a trailing card that would otherwise sit alone
+   is stretched across the cells it would have left empty. Five cards become
+   three then two-across; four become three then one full-width. Nothing has
+   to be recounted here when a category is added or removed. */
+.card:last-child:nth-child(3n + 1) { grid-column: span 3; }
+.card:last-child:nth-child(3n + 2) { grid-column: span 2; }
+
+@media (max-width: 60rem) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .card:last-child:nth-child(3n + 1),
+  .card:last-child:nth-child(3n + 2) { grid-column: auto; }
+  .card:last-child:nth-child(2n + 1) { grid-column: span 2; }
+}
+
+@media (max-width: 40rem) {
+  .cards { grid-template-columns: 1fr; }
+  .card:last-child:nth-child(2n + 1) { grid-column: auto; }
 }
 
 .card {
