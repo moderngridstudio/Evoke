@@ -26,7 +26,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Primary | Font |  | work_sans_n4 |  |
+| Primary | Font |  | inter_n4 |  |
 | Heading font | Font |  | cormorant_n4 |  |
 | Price font | Font |  | work_sans_n4 | Used for prices, totals, and cart line items. A plain sans-serif is recommended so numbers stay legible even if your primary font is decorative. |
 | Body text size | Slider | 14–20 px | 16 |  |

@@ -19,6 +19,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Collage](#collage)
 - [Collection list](#collection-list)
 - [Collections](#collections)
+- [Collections with products](#collections-with-products)
 - [Contact form](#contact-form)
 - [Countdown timer](#countdown-timer)
 - [Custom HTML](#custom-html)
@@ -30,10 +31,12 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Featured collection tabs](#featured-collection-tabs)
 - [Featured product](#featured-product)
 - [Footer](#footer)
+- [Gallery](#gallery)
 - [Gift card](#gift-card)
 - [Header](#header)
 - [Image with text](#image-with-text)
 - [Image with text overlay](#image-with-text-overlay)
+- [Info columns](#info-columns)
 - [Map](#map)
 - [Not found](#not-found)
 - [Page](#page)
@@ -44,14 +47,17 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Product](#product)
 - [Product recommendations](#product-recommendations)
 - [Quick look](#quick-look)
+- [Recently viewed](#recently-viewed)
 - [Rich text](#rich-text)
 - [Scrolling banner](#scrolling-banner)
+- [Scrolling text](#scrolling-text)
 - [Search results](#search-results)
 - [Shop the look](#shop-the-look)
 - [Slideshow](#slideshow)
 - [Social proof](#social-proof)
 - [Text adverts](#text-adverts)
 - [Text adverts with icon](#text-adverts-with-icon)
+- [Video](#video)
 - [Video popup](#video-popup)
 
 ---
@@ -925,6 +931,14 @@ _No section-level settings._
 ### Settings
 
 
+**Collections**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Collections shown | Choice | All collections · Selected collections | all | All lists every collection in your store, with pagination. Selected uses only the collection blocks you add below. |
+| Collections per page | Slider | 4–24 | 12 | Applies when Collections shown is set to All collections. |
+
+
 **Layout**
 
 | Setting | Type | Options | Default | Notes |
@@ -964,6 +978,10 @@ _No section-level settings._
 |---|---|---|---|---|
 | Card style (desktop) | Choice | Below image — title beneath photo · Overlay — title floats over image | below |  |
 | Card style (mobile) | Choice | Match desktop · Below image — title beneath photo · Overlay — title floats over image | follow | Override the desktop card style on screens below 750 px. Useful when overlay text is hard to read on small images. |
+| Enable overlay gradient | On / off |  | false | Applies when Collections shown is set to All collections. Collection blocks carry their own overlay settings. |
+| Overlay | Color |  | #242424 |  |
+| Overlay opacity | Slider | 0–100 % | 60 |  |
+| Text | Color |  | #FFFFFF |  |
 | Enable card hover effects | On / off |  | true | Controls image zoom, card lift, overlay darkening, and title slide-up on hover. |
 | Enable button hover effects | On / off |  | true | Controls CTA pill brightening, arrow nudge on overlay cards, and arrow-gap animation on below-image cards. Turn off for a fully static, print-editorial feel. |
 | Image aspect ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Landscape (16:9) | portrait |  |
@@ -1083,6 +1101,81 @@ _No section-level settings._
 | Enable Quick Look | On / off |  | true |  |
 
 > Supports app blocks — apps you install can add their own content here.
+
+---
+
+## Collections with products
+
+*File: `sections/collections-with-products.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Collections**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Collections shown | Choice | All collections · Selected collections | all | All lists every collection that has products, with pagination. Selected uses only the collection blocks you add below. |
+| Collections per page | Slider | 2–20 | 8 | Applies when Collections shown is set to All collections. |
+| Space between collections | Slider | 32–128 px | 64 |  |
+| Show dividers | On / off |  | true |  |
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading size | Choice | Small · Medium · Large | medium |  |
+| Heading alignment | Choice | Left · Center · Right | center |  |
+| Spacing below heading | Slider | 0–80 px | 32 |  |
+| Show 'See more' link | On / off |  | true |  |
+
+
+**Grid**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
+| Layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | stacked | Applies below 750px, independently of the desktop setting above. |
+| Products per row (desktop) | Slider | 2–5 | 4 |  |
+| Products to show | Slider | 2–12 | 8 |  |
+| Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | portrait |  |
+| Show product vendor | On / off |  | false |  |
+
+
+**Quick Look**
+
+
+> Button and modal styling for Quick Look is shared across the whole theme — edit it in Theme settings → Quick look.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Enable Quick Look | On / off |  | true |  |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+| Offset for overlay header | On / off |  | false |  |
+
+
+**Padding**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top padding | Slider | 0–100 px | 48 |  |
+| Bottom padding | Slider | 0–100 px | 48 |  |
+
+### Blocks
+
+#### Collection
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Collection | Collection |  |  |  |
+| Custom title | Text |  |  | Leave blank to use the collection's title. |
 
 ---
 
@@ -1537,8 +1630,8 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Multiple looks layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (horizontal scroll) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
-| Multiple looks layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (horizontal scroll) | stacked | Applies below 750px, independently of the desktop setting above. |
+| Multiple looks layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
+| Multiple looks layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | stacked | Applies below 750px, independently of the desktop setting above. |
 
 
 **Grid**
@@ -1596,8 +1689,8 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Multiple looks layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (horizontal scroll) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
-| Multiple looks layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (horizontal scroll) | stacked | Applies below 750px, independently of the desktop setting above. |
+| Multiple looks layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
+| Multiple looks layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | stacked | Applies below 750px, independently of the desktop setting above. |
 
 
 **Grid**
@@ -2007,6 +2100,85 @@ _No section-level settings._
 
 ---
 
+## Gallery
+
+*File: `sections/gallery.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Gallery |  |
+| Description | Rich text |  |  |  |
+| Heading alignment | Choice | Left · Center · Right | left |  |
+| Spacing below heading | Slider | 0–80 px | 40 |  |
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Content position | Choice | Below image — title beneath photo · Overlay — title floats over image | below |  |
+| Alignment | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_left |  |
+| Button style | Choice | Filled · Outlined · Underlined | underlined |  |
+| Overlay opacity | Slider | 0–90 % | 40 | Only applies when content sits over the image. |
+
+
+**Grid Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Columns per row (desktop) | Choice | 2 · 3 · 4 · 5 | 3 |  |
+| Columns per row (mobile) | Choice | 1 · 2 | 2 |  |
+| Image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | square |  |
+| Spacing between images | Slider | 0–48 px | 16 |  |
+| Width | Choice | Content width · Full width | content |  |
+
+
+**Media**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Enable lightbox | On / off |  | true | Lets customers click an image to view it full screen. |
+
+
+**Section spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+| Top spacing | Slider | 0–100 px | 56 |  |
+| Bottom spacing | Slider | 0–100 px | 56 |  |
+
+### Blocks
+
+#### Image
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image | Image |  |  |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Subheading | Text |  |  |  |
+| Heading | Text |  |  |  |
+| Button label | Text |  |  | A button needs a link to appear. |
+
+---
+
 ## Gift card
 
 *File: `sections/gift-card.liquid`* — fixed template section
@@ -2057,7 +2229,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show QR code | On / off |  | true |  |
-| QR code text | Text |  | or scan the QR code in store |  |
+| QR code text | Text |  | Or scan the QR code in store |  |
 
 
 **Actions**
@@ -2366,6 +2538,135 @@ _No section-level settings._
 | Label | Text |  | Shop now |  |
 | Link | Link |  |  |  |
 | Style | Choice | Primary · Secondary | primary |  |
+
+---
+
+## Info columns
+
+*File: `sections/info-columns.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Why shop with us |  |
+| Description | Rich text |  | &lt;p&gt;Set out the promises that matter most before a customer has to go looking for them.&lt;/p&gt; |  |
+| Heading alignment | Choice | Left · Center · Right | center |  |
+| Spacing below heading | Slider | 0–80 px | 40 |  |
+
+
+**Media**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Maximum width | Slider | 80–600 px | 400 |  |
+
+
+**Buttons**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Button style | Choice | Filled · Outlined · Underlined | underlined |  |
+| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Button background | Color |  | #111111 |  |
+| Button text | Color |  | #FFFFFF |  |
+
+
+**Desktop**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Layout | Choice | Grid · Carousel | grid |  |
+| Columns per row (desktop) | Slider | 1–4 | 3 |  |
+| Content position | Choice | Top · Center · Bottom | top |  |
+| Text alignment | Choice | Left · Center · Right | center |  |
+
+
+**Mobile**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Layout | Choice | Grid · Carousel | slider |  |
+| Columns per row (mobile) | Choice | 1 · 2 | 1 |  |
+| Alignment (mobile) | Choice | Left · Center · Right | center |  |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Section width | Choice | Page · Full width | page | Page constrains the section to your theme's page width. Full width stretches edge-to-edge. |
+| Top padding | Slider | 0–120 px | 56 |  |
+| Bottom padding | Slider | 0–120 px | 56 |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+### Blocks
+
+#### Image with text
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image | Image |  |  |  |
+| Shape | Choice | Adapt to image · Circle · Square (1:1) · Portrait (3:4) · Wide (16:9) | square |  |
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Free returns |  |
+| Text | Rich text |  | &lt;p&gt;Thirty days to change your mind, with a prepaid label in every parcel.&lt;/p&gt; |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+| Button label | Text |  |  |  |
+
+#### Video with text
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Video | Video |  |  |  |
+| or embed video from URL | Text |  |  | Shows when no Shopify-hosted video is selected. Accepts YouTube and Vimeo. |
+| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+| Shape | Choice | Adapt to image · Circle · Square (1:1) · Portrait (3:4) · Wide (16:9) | wide |  |
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | See it in use |  |
+| Text | Rich text |  | &lt;p&gt;A short clip does more than a paragraph when the detail is hard to picture.&lt;/p&gt; |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+| Button label | Text |  |  |  |
+
+#### Text
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Made to last |  |
+| Text | Rich text |  | &lt;p&gt;Every piece is built from materials we would happily keep for a decade.&lt;/p&gt; |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+| Button label | Text |  |  |  |
 
 ---
 
@@ -3205,7 +3506,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | You may also like |  |
 | Heading alignment | Choice | Left · Center · Right | left |  |
-| Heading spacing | Slider | 0–80 px | 44 |  |
+| Spacing below heading | Slider | 0–80 px | 44 |  |
 
 
 **Layout**
@@ -3213,7 +3514,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Color scheme | Color scheme |  | scheme-1 |  |
-| Products per row — desktop | Choice | 2 · 3 · 4 · 5 | 4 |  |
+| Products per row (desktop) | Choice | 2 · 3 · 4 · 5 | 4 |  |
 | Top spacing | Slider | 0–120 px | 56 |  |
 | Bottom spacing | Slider | 0–120 px | 56 |  |
 
@@ -3242,6 +3543,52 @@ _No section-level settings._
 *File: `sections/quick-look.liquid`* — fixed template section
 
 _No section-level settings._
+
+---
+
+## Recently viewed
+
+*File: `sections/recently-viewed.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+> Fills in from each shopper's own browsing history, so it stays empty here and on a first visit.
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Recently viewed |  |
+| Heading alignment | Choice | Left · Center · Right | left |  |
+| Spacing below heading | Slider | 0–60 px | 44 |  |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Products to show | Slider | 2–12 | 4 |  |
+| Products per row (desktop) | Choice | 2 · 3 · 4 · 5 | 4 |  |
+
+
+**Card**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image ratio | Choice | Portrait (4:5) · Tall (3:4) · Square (1:1) · Extra tall | portrait |  |
+| Show vendor | On / off |  | false |  |
+| Enable Quick Look | On / off |  | true |  |
+
+
+**Section spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+| Top spacing | Slider | 0–100 px | 56 |  |
+| Bottom spacing | Slider | 0–100 px | 56 |  |
 
 ---
 
@@ -3387,6 +3734,54 @@ _No section-level settings._
 
 ---
 
+## Scrolling text
+
+*File: `sections/scrolling-text.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Animation**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Speed | Slider | 1–10 | 5 |  |
+| Animation direction | Choice | Left · Right | left |  |
+| Pause on hover | On / off |  | true |  |
+
+
+**Style**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Text size | Slider | 11–24 px | 14 |  |
+| Show fade | On / off |  | true |  |
+| Enable borders | On / off |  | false |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Space between blocks (desktop) | Slider | 8–120 px | 48 |  |
+| Space between blocks (mobile) | Slider | 8–80 px | 24 |  |
+| Top spacing | Slider | 0–60 px | 12 |  |
+| Bottom spacing | Slider | 0–60 px | 12 |  |
+
+### Blocks
+
+#### Text
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Heading | Text |  | FREE SHIPPING |  |
+| Text | Text |  | on orders over $150 |  |
+| Link | Link |  |  |  |
+
+---
+
 ## Search results
 
 *File: `sections/search.liquid`* — fixed template section
@@ -3504,8 +3899,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Card style | Choice | Auto (match layout) · Compact (thumbnail beside text) · Standard (image above text) | auto | Auto uses compact cards in the Overlay layout and standard cards in the Split layout. |
-| Cards visible (overlay layout) | Slider | 2–5 | 4 |  |
-| Cards visible (split layout) | Slider | 1–3 | 1 |  |
+| Cards visible (desktop) | Slider | 2–5 | 4 |  |
+| Cards visible (desktop) | Slider | 1–3 | 1 |  |
 | Card image ratio | Choice | Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | portrait | Standard cards only — compact cards always use a square thumbnail. |
 | Show product vendor | On / off |  | false |  |
 | Show price | On / off |  | true |  |
@@ -3695,7 +4090,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show star rating | On / off |  | true |  |
-| Rating value | Slider | 1–5 | 5 |  |
+| Rating value | Slider | 1–5 | 5 | This value is typed in, not read from a review app. Use the genuine average rating your store has earned. |
 | Star color | Color |  | #d4a13d |  |
 | Rating caption | Text |  | Trusted by Those Who Lounge in Luxury |  |
 
@@ -3738,7 +4133,7 @@ _No section-level settings._
 | Custom ratio — height | Slider | 1–21 | 9 |  |
 | Quote | Rich text |  | &lt;p&gt;Witness the meticulous process where luxury fabric meets masterful tailoring, creating timeless loungewear pieces.&lt;/p&gt; |  |
 | Author | Text |  | @LuxeClothing |  |
-| Show verified badge | On / off |  | false | Displays a checkmark next to the author name. |
+| Show verified badge | On / off |  | false | Displays a checkmark next to the author name. Use it only for reviews you have confirmed came from a real customer. |
 | Date | Text |  | 2027-01-01 |  |
 
 ---
@@ -3861,6 +4256,56 @@ _No section-level settings._
 | Button label | Text |  |  |  |
 | Button background | Color |  | #111111 |  |
 | Button text | Color |  | #FFFFFF |  |
+
+---
+
+## Video
+
+*File: `sections/video.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  |  |  |
+| Description | Rich text |  |  |  |
+| Heading alignment | Choice | Left · Center · Right | left |  |
+| Spacing below heading | Slider | 0–80 px | 40 |  |
+
+
+**Media**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Video | Video |  |  |  |
+| or embed video from URL | Video URL |  |  | Shows when no Shopify-hosted video is selected. Accepts YouTube and Vimeo. |
+| Cover image | Image |  |  | Shown before the video plays. If left blank, a YouTube video will use its default thumbnail automatically. |
+| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+
+
+**Style**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Autoplay | On / off |  | false | Autoplaying video is muted and looped, which is what browsers require. |
+| Loop product videos | On / off |  | false |  |
+| Show controls | On / off |  | true | Adds a play/pause and sound button over the video. Applies to uploaded video only — YouTube and Vimeo keep their own controls. |
+| Controls position | Choice | Top left · Top right · Bottom left · Bottom right | bottom_right |  |
+| Section height | Choice | Auto · Small · Medium · Large · Extra large | auto |  |
+| Width | Choice | Content width · Full width | content |  |
+| Overlay opacity | Slider | 0–80 % | 0 |  |
+
+
+**Section spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+| Top spacing | Slider | 0–100 px | 56 |  |
+| Bottom spacing | Slider | 0–100 px | 56 |  |
 
 ---
 
