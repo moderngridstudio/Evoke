@@ -13,6 +13,7 @@
   "contactFormUrl": "https://tally.so/embed/obN8AO?alignLeft=1&hideTitle=1&dynamicHeight=1",
   "country": "India",
 
+  "_themeStoreUrl_comment": "Unset until the listing exists. Unlike the other placeholders this one does not render on the site — the footer link is dropped instead — but the build still warns about it every run.",
   "themeStoreUrl": "TODO_THEME_STORE_URL",
 
   "copyrightStartYear": 2026,

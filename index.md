@@ -12,7 +12,7 @@ This site is the full documentation. If you can't find an answer here, [contact 
 |---|---|
 | **[Getting started](getting-started.md)** | Install the theme, set your logo, colors and fonts, and build your first homepage. |
 | **[Theme settings](theme-settings.md)** | Every store-wide setting: typography, color schemes, product cards, cart, swatches, Quick Look. |
-| **[Sections reference](sections-reference.md)** | All 47 sections and every setting each one has. |
+| **[Sections reference](sections-reference.md)** | All 57 sections and every setting each one has. |
 | **[FAQ](faq.md)** | Common questions and the things people get stuck on. |
 | **[Support](support.md)** | Contact form, what's covered, and response times. |
 
@@ -20,7 +20,7 @@ This site is the full documentation. If you can't find an answer here, [contact 
 
 ## What Evoke includes
 
-**47 sections**, 31 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
+**57 sections**, 41 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
 
 Highlights:
 
@@ -30,7 +30,11 @@ Highlights:
 - **Quick Look** — a product modal that opens from any product card, styled once in Theme settings and reused everywhere
 - **Featured collection** and **Featured collection tabs** — one collection on its own, or several behind a tabbed strip
 - **Blog posts** — recent or hand-picked articles, using the same card as the blog template
-- **Before/after comparison**, **Countdown timer**, **Scrolling banner**, **Video popup**, **Social proof**, **Dynamic text**
+- **Testimonials** and **Social proof** — customer quotes as a carousel, or as a wall of ratings and reviews
+- **Social feed** — an Instagram-style scrolling strip of your own images, each one linkable
+- **Logo bar** — the "as seen in" or stockist strip, static or scrolling
+- **Promotional popup** — a timed or exit-intent offer, with its own frequency rules
+- **Before/after comparison**, **Countdown timer**, **Scrolling banner**, **Video popup**, **Dynamic text**
 - **Mega menus** — including a collection mega menu that pulls live products from a collection
 
 ## Built-in Shopify features
@@ -50,7 +54,7 @@ Evoke supports these without any app:
 
 ## Languages
 
-Evoke ships with **English, French, German and Spanish**.
+Evoke ships with **English, French, German, Spanish, Italian, Dutch and Portuguese (Brazil)** — every one of them a complete translation, storefront text and theme editor alike.
 
 All customer-facing text is translatable, so any additional language can be added through Shopify's **Translate & Adapt** app without touching the theme code. Product titles, descriptions and meta text are your own content and are translated in the same app.
 

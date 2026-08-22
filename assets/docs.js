@@ -169,7 +169,7 @@
 
 /* ── Tally contact form ──────────────────────────────────────────────────────
    Only the support page carries a [data-tally-src] iframe, so this is a no-op
-   everywhere else and costs nothing on the other 89 pages — no script is
+   everywhere else and costs nothing on the other 99 pages — no script is
    fetched unless the form is actually present.
 
    It lives here rather than beside the iframe in support.md because the

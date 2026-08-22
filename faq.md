@@ -24,7 +24,7 @@ The block's **Menu item** must match a top-level item in your navigation menu **
 
 ### Can I add my own languages?
 
-Yes. Evoke ships with English, French, German and Spanish, and all customer-facing text is translatable. Add any other language through Shopify's **Translate & Adapt** app — no code changes needed.
+Yes. Evoke ships with English, French, German, Spanish, Italian, Dutch and Portuguese (Brazil), and all customer-facing text is translatable. Add any other language through Shopify's **Translate & Adapt** app — no code changes needed.
 
 ---
 

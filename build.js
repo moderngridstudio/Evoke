@@ -392,9 +392,14 @@ ${main}
       <a href="${url('')}">Home</a>
       <a href="${url('support/')}">Support</a>
       ${
+        /* The only placeholder that is omitted rather than shown. The others mark
+           something missing that a merchant needs; this one marks a listing that
+           does not exist until the theme is accepted, and a red "TODO" in the
+           footer of all 100 pages tells a reviewer the docs are unfinished. The
+           build still warns about it on every run, so it cannot be forgotten. */
         typeof cfg.themeStoreUrl === 'string' && !cfg.themeStoreUrl.startsWith('TODO')
           ? `<a href="${escAttr(cfg.themeStoreUrl)}" target="_blank" rel="noopener">Theme Store</a>`
-          : `<span class="todo" title="Set themeStoreUrl in site.config.json">TODO — Theme Store link</span>`
+          : ''
       }
     </nav>
   </div>
@@ -710,7 +715,8 @@ if (todos.length || unresolved.size) {
     console.log(`\n  ${unresolved.size} unresolved {{ TOKEN }} in the Markdown:`);
     for (const u of unresolved) console.log(`    TODO  ${u}`);
   }
-  console.log('\n  All of these render as visible TODOs on the site, so they cannot ship unnoticed.\n');
+  console.log('\n  These render as visible TODOs on the site, so they cannot ship unnoticed —');
+  console.log('  except themeStoreUrl, whose footer link is dropped until the listing exists.\n');
 } else {
   console.log('\n  No placeholders left — ready to publish.\n');
 }

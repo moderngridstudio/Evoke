@@ -37,6 +37,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Image with text](#image-with-text)
 - [Image with text overlay](#image-with-text-overlay)
 - [Info columns](#info-columns)
+- [Logo bar](#logo-bar)
 - [Map](#map)
 - [Not found](#not-found)
 - [Page](#page)
@@ -46,6 +47,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Predictive search results](#predictive-search-results)
 - [Product](#product)
 - [Product recommendations](#product-recommendations)
+- [Promotional popup](#promotional-popup)
 - [Quick look](#quick-look)
 - [Recently viewed](#recently-viewed)
 - [Rich text](#rich-text)
@@ -54,7 +56,9 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Search results](#search-results)
 - [Shop the look](#shop-the-look)
 - [Slideshow](#slideshow)
+- [Social feed](#social-feed)
 - [Social proof](#social-proof)
+- [Testimonials](#testimonials)
 - [Text adverts](#text-adverts)
 - [Text adverts with icon](#text-adverts-with-icon)
 - [Video](#video)
@@ -1586,8 +1590,8 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Question | Text |  | Place your question or heading here |  |
-| Answer | Rich text |  | &lt;p&gt;OHere you can place an explanation or answer to the question.&lt;/p&gt; |  |
+| Question | Text |  | Add a question customers ask often |  |
+| Answer | Rich text |  | &lt;p&gt;Answer the question here. Keep it short and specific so customers can act on it without contacting support.&lt;/p&gt; |  |
 
 #### Contact link
 
@@ -1938,7 +1942,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Heading | Text |  | Shipping &amp; returns |  |
+| Heading | Text |  | Shipping and returns |  |
 | Content | Rich text |  |  |  |
 
 
@@ -2309,11 +2313,11 @@ _No section-level settings._
 #### Mega menu
 
 
-> Attaches a full-width mega menu to a top-level navigation item. The columns and links are pulled automatically from that item's existing menu structure — this block only adds the wide layout and, optionally, promo tiles.
+> Attaches a full-width mega menu to a top-level navigation item. The columns and links are pulled automatically from that item's existing menu structure — this block only adds the wide layout and, optionally, promo tiles. Works even if that menu item has no sub-links of its own, in which case the panel shows the promo tiles alone.
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Menu item | Text |  |  | Must exactly match the title of a top-level item in the header's navigation menu (e.g. "Shop"), including capitalization. |
+| Menu item | Text |  |  | Must match the title of a top-level item in the header's navigation menu (e.g. "Shop"). Capitalization doesn't matter. |
 | Open on | Choice | Hover · Click | hover | Hover also opens on click/tap automatically for touch and keyboard users. Click requires an actual click even with a mouse. |
 
 
@@ -2322,6 +2326,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Link column width | Slider | 120–240 px | 160 |  |
+| Promo tile shape | Choice | Tall (2:3) · Square (1:1) · Wide (4:3) | tall | Applies to both tiles, on desktop and in the mobile menu. |
+| Promo area width | Slider | 25–55 % | 38 | Share of the mega menu the tiles take up. The link columns fill the rest. |
 
 
 **Promo tile 1**
@@ -2356,7 +2362,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Menu item | Text |  |  | Must exactly match the title of a top-level item in the header's navigation menu (e.g. "New arrivals"), including capitalization. |
+| Menu item | Text |  |  | Must match the title of a top-level item in the header's navigation menu (e.g. "New arrivals"). Capitalization doesn't matter. |
 | Open on | Choice | Hover · Click | hover | Hover also opens on click/tap automatically for touch and keyboard users. Click requires an actual click even with a mouse. |
 
 
@@ -2670,6 +2676,62 @@ _No section-level settings._
 
 ---
 
+## Logo bar
+
+*File: `sections/logo-bar.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+> A still row of press, partner or payment logos. For the same logos as a moving marquee, use the Scrolling banner section instead.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | As seen in |  |
+| Heading alignment | Choice | Left · Center · Right | center |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Columns per row (desktop) | Slider | 3–8 | 5 |  |
+| Columns per row (mobile) | Choice | 2 columns · 3 columns | 2 |  |
+| Space between logos | Slider | 8–80 px | 32 |  |
+
+
+**Style**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Shape | Choice | Adapt to image · Wide (16:9) · Landscape (3:2) · Square (1:1) · Tall (3:4) | natural | Sets the box each logo fills. Logos are letterboxed inside it, so every row is the same height whatever the artwork. “Adapt to image” uses no box — logos are matched by height instead. |
+| Logo height (desktop) | Slider | 20–120 px | 48 |  |
+| Logo height (mobile) | Slider | 16–96 px | 32 |  |
+| Space inside the box | Slider | 0–48 px | 12 | Breathing room between the logo and the edge of its box. Halved on mobile. |
+| Mute logo colors | On / off |  | true | Logos return to full color on hover. |
+
+
+**Padding**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top padding | Slider | 0–100 px | 40 |  |
+| Bottom padding | Slider | 0–100 px | 40 |  |
+| Spacing below heading | Slider | 0–80 px | 28 |  |
+
+### Blocks
+
+#### Logo
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image | Image |  |  | A transparent PNG or SVG works best. Logos are matched by height, not width. |
+| Brand name | Text |  |  | Used as the image's alt text when the file has none of its own. |
+| Link | Link |  |  |  |
+
+---
+
 ## Map
 
 *File: `sections/map.liquid`* — **Add via theme editor**
@@ -2683,7 +2745,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Google Maps embed code or URL | Text (multi-line) |  |  | In Google Maps: Share → Embed a map → copy the whole iframe code and paste it here (or just the src URL). Takes priority over the API key below. |
 | Google Maps API key | Text |  |  | Alternative to embed URL. Requires the Maps Embed API to be enabled in your Google Cloud project. |
-| Address for API key | Text |  | 123 Fake St, Toronto, Canada | Only used when an API key is provided above. This address is encoded into the embed URL. |
+| Address for API key | Text |  |  | Only used when an API key is provided above. This address is encoded into the embed URL. |
 | Fallback image | Image |  |  | Shown when no map source is configured. A static map screenshot works well here. |
 
 
@@ -3538,6 +3600,70 @@ _No section-level settings._
 
 ---
 
+## Promotional popup
+
+*File: `sections/promotional-popup.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+> A modal offer shown over the page. For a persistent corner widget use Video popup instead; for the same signup form inline on a page use Email signup strip.
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Kicker | Text |  | Members get more |  |
+| Heading | Text |  | Take 10% off your first order |  |
+| Text | Rich text |  | &lt;p&gt;Join the list for early access to new arrivals, and we'll send a welcome code straight to your inbox.&lt;/p&gt; |  |
+| Image | Image |  |  | Optional. Shown beside the text on desktop, above it on mobile. |
+| Text alignment | Choice | Left · Center · Right | left |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Button**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Action | Choice | Newsletter signup · Button · No action | newsletter |  |
+| Email field label | Text |  | Email address |  |
+| Success message | Text |  | Thanks — check your inbox for your code. |  |
+| Button label | Text |  | Subscribe |  |
+| Button link | Link |  |  |  |
+| Dismiss link | Text |  | No thanks | A visible way to decline. Leave empty to rely on the close button alone. |
+| Override button colors | On / off |  | false |  |
+| Button background | Color |  | #111111 |  |
+| Button text color | Color |  | #ffffff |  |
+
+
+**Trigger**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show popup | Choice | After a delay · After scrolling · On exit intent | delay |  |
+| Delay | Slider | 0–30 s | 5 | Exit intent has no cursor to track on a phone, so a delay of at least 8 seconds is used there instead. |
+| Scroll depth | Slider | 10–90 % | 30 |  |
+| Show again after | Slider | 0–30 d | 7 | Days before a shopper who dismissed it sees it again. Set to 0 to show on every visit. |
+| Hide from logged-in customers | On / off |  | true | Existing customers are usually already subscribed. |
+| Test mode | On / off |  | false | Opens immediately and ignores the trigger and frequency. Turn off before publishing. |
+
+
+**Style**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Media position | Choice | Left · Right | left | Applies on desktop. The image always sits above the text on mobile. |
+| Image ratio | Choice | Landscape (3:2) · Portrait (4:5) · Square (1:1) · Wide (16:9) | landscape |  |
+| Maximum width | Slider | 360–1000 px | 880 |  |
+| Border radius | Slider | 0–40 px | 4 |  |
+| Heading font size (desktop) | Slider | 18–56 px | 34 |  |
+| Heading font size (mobile) | Slider | 16–40 px | 24 |  |
+| Overlay | Color |  | #000000 |  |
+| Overlay opacity | Slider | 0–90 % | 55 |  |
+
+---
+
 ## Quick look
 
 *File: `sections/quick-look.liquid`* — fixed template section
@@ -4074,6 +4200,96 @@ _No section-level settings._
 
 ---
 
+## Social feed
+
+*File: `sections/social-feed.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+> Add images as blocks to build the wall. This is a set you upload and curate — it doesn't connect to a social account.
+
+
+**Content**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Follow Us on Instagram |  |
+| Description | Rich text |  | &lt;p&gt;Experience the best of our brand on Instagram, follow us for behind-the-scenes access.&lt;/p&gt; |  |
+| Text alignment | Choice | Left · Center · Right | left |  |
+| Profile picture | Image |  |  | Square images work best. 96 × 96 px or larger. |
+| Account name | Text |  | @yourbrand |  |
+| Follower count | Text |  | 13k Followers | Free text — update it yourself as the count changes. |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Button**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Button label | Text |  | Follow @yourbrand |  |
+| Button link | Link |  |  |  |
+| Button style | Choice | Filled · Outlined · Underlined | filled |  |
+| Override button colors | On / off |  | false |  |
+| Button background | Color |  | #111111 |  |
+| Button text color | Color |  | #ffffff |  |
+
+
+**Animation**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Animation direction | Choice | Vertical · Horizontal | vertical | Vertical scrolls the columns up and down. Horizontal scrolls the rows sideways. |
+| Speed | Slider | 10–120 | 40 | Pixels travelled per second. The pace stays the same however many images you add. |
+| Alternate direction | On / off |  | true | Every second column travels the opposite way. |
+| Pause on hover | On / off |  | true |  |
+| Show fade | On / off |  | true | Softens the images where they meet the edge of the section. |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Media position | Choice | Left · Right | right |  |
+| Text width (desktop) | Slider | 25–55 % | 36 | Share of the row given to the text. The images take the rest. |
+| Space between text and images | Slider | 16–120 px | 64 |  |
+| Columns | Slider | 2–5 | 3 | Stays the same on mobile — the images get narrower rather than rewrapping onto a second row. |
+| Rows | Slider | 1–3 | 2 |  |
+| Image area height (desktop) | Slider | 240–800 px | 520 |  |
+| Image area height (mobile) | Slider | 160–600 px | 340 |  |
+| Image width (desktop) | Slider | 120–400 px | 240 |  |
+| Image width (mobile) | Slider | 90–280 px | 180 |  |
+| Spacing between images | Slider | 0–40 px | 16 |  |
+| Image ratio | Choice | Portrait (4:5) · Square (1:1) · Landscape (3:2) · Wide (16:9) | portrait |  |
+
+
+**Style**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading font size (desktop) | Slider | 20–72 px | 44 |  |
+| Heading font size (mobile) | Slider | 18–48 px | 30 |  |
+| Profile picture size | Slider | 32–80 px | 48 |  |
+
+
+**Padding**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top padding | Slider | 0–120 px | 64 |  |
+| Bottom padding | Slider | 0–120 px | 64 |  |
+
+### Blocks
+
+#### Image
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image | Image |  |  | Alt text set on the file is read out by screen readers. |
+| Link | Link |  |  | Opens in a new tab. Link to the post, or leave empty. |
+
+---
+
 ## Social proof
 
 *File: `sections/social-proof.liquid`* — **Add via theme editor**
@@ -4135,6 +4351,65 @@ _No section-level settings._
 | Author | Text |  | @LuxeClothing |  |
 | Show verified badge | On / off |  | false | Displays a checkmark next to the author name. Use it only for reviews you have confirmed came from a real customer. |
 | Date | Text |  | 2027-01-01 |  |
+
+---
+
+## Testimonials
+
+*File: `sections/testimonials.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+> Short written quotes as cards. For video and Reels-shaped clips, use the Social proof section instead.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | What our customers say |  |
+| Subheading | Rich text |  | &lt;p&gt;Real words from people who shop with us.&lt;/p&gt; |  |
+| Heading alignment | Choice | Left · Center · Right | center |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Card**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Card style | Choice | Bordered · Filled · Plain — no card | bordered |  |
+| Text alignment | Choice | Left · Center · Right | left |  |
+| Show quote mark | On / off |  | true |  |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Layout (desktop) | Choice | Grid · Carousel | grid |  |
+| Columns per row (desktop) | Slider | 2–4 | 3 |  |
+| Layout (mobile) | Choice | Grid · Carousel | slider |  |
+| Columns per row (mobile) | Choice | 1 column · 2 columns | 1 |  |
+
+
+**Padding**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top padding | Slider | 0–100 px | 48 |  |
+| Bottom padding | Slider | 0–100 px | 48 |  |
+| Spacing below heading | Slider | 0–80 px | 36 |  |
+
+### Blocks
+
+#### Testimonial
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Quote | Rich text |  | &lt;p&gt;Exactly what I hoped for. The quality is obvious the moment you unwrap it, and it has held up beautifully.&lt;/p&gt; |  |
+| Rating | Slider | 0–5 | 5 | Type in the rating this customer actually gave. Set to 0 to hide the stars on this one. |
+| Author | Text |  | Alex Moreau |  |
+| Author detail | Text |  |  | Shown under the name — a place, a job title, or 'Verified buyer'. |
+| Image | Image |  |  | Optional. Square images work best — it is cropped to a circle. |
+| Product reviewed | Product |  |  | Optional. Adds a link to the product under the quote. |
 
 ---
 

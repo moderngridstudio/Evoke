@@ -190,7 +190,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Favicon image | Image |  |  | Use a square PNG or ICO image. |
+| Favicon | Image |  |  | Use a square .png or .ico image. |
 
 ## Animations
 

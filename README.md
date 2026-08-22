@@ -45,11 +45,14 @@ After any change to the theme's schemas, regenerate the reference pages first.
 `gen-docs.js` reads the theme's `sections/`, `config/` and `locales/` from the
 working directory, so run it **from the theme root** and point it at this repo.
 
-This repo and the theme live on different drives, so the paths are absolute:
+The theme and this repo are separate checkouts, so the paths are absolute:
 
 ```bash
-cd /d D:\Web\Shopify\Evoke && node C:\Users\Khushal\Documents\ModernGrid\Evoke\gen-docs.js C:\Users\Khushal\Documents\ModernGrid\Evoke
+cd /d D:\Shopify\Github-Clone\Dev-Project\Evoke-Dev && node D:\Shopify\Github-Clone\Docs\Evoke\gen-docs.js D:\Shopify\Github-Clone\Docs\Evoke
 ```
+
+It prints what it found — `sections documented: 57 (41 addable)` — which is
+the quickest way to confirm it read the theme you meant.
 
 Then rebuild the site from this folder:
 
