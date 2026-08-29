@@ -703,6 +703,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Image | Image |  |  |  |
+| Image ratio | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Overrides the height set for this block in Grid. "Adapt to collage" keeps the grid height. |
+| Vertical position | Choice | Same as section · Top · Center · Bottom | inherit | Where the block sits in its row once Image ratio makes it shorter than the grid height. Overrides Block alignment for this block. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_right |  |
 | Heading font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h4 |  |
 
@@ -712,6 +714,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Image | Image |  |  |  |
+| Image ratio | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Blocks are full width on mobile, so the grid height crops tall images. Pick a ratio to show the whole photo. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_right |  |
 | Heading font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h4 |  |
 
@@ -856,6 +859,9 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Product | Product |  |  |  |
+| Image ratio | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Overrides the height set for this block in Grid. "Adapt to collage" keeps the grid height. |
+| Image ratio (mobile) | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Blocks are full width on mobile, so the grid height crops tall images. Pick a ratio to show the whole photo. |
+| Vertical position | Choice | Same as section · Top · Center · Bottom | inherit | Where the block sits in its row once Image ratio makes it shorter than the grid height. Overrides Block alignment for this block. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_left |  |
 | Show price | On / off |  | true |  |
 | Show quick add button | On / off |  | true |  |
@@ -880,6 +886,9 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Collection | Collection |  |  |  |
+| Image ratio | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Overrides the height set for this block in Grid. "Adapt to collage" keeps the grid height. |
+| Image ratio (mobile) | Choice | Adapt to collage · Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | collage | Blocks are full width on mobile, so the grid height crops tall images. Pick a ratio to show the whole photo. |
+| Vertical position | Choice | Same as section · Top · Center · Bottom | inherit | Where the block sits in its row once Image ratio makes it shorter than the grid height. Overrides Block alignment for this block. |
 | Heading override | Text |  |  | Leave blank to use the collection title. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_left |  |
 
@@ -1069,6 +1078,7 @@ _No section-level settings._
 | Products per page | Slider | 4–36 | 16 |  |
 | Products per row (desktop) | Slider | 2–5 | 4 |  |
 | Products per row (mobile) | Choice | 1 product · 2 products | 2 |  |
+| Grid spacing | Choice | Extra small · Small · Medium · Large · Extra large | 16 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | three-four |  |
 | Show secondary image on hover | On / off |  | true |  |
 | Show full product title | On / off |  | true | If unchecked, long titles containing colons (:) or dashes (-) will be split based on the structured title handling setting below. |
@@ -1076,6 +1086,14 @@ _No section-level settings._
 | Show discount percentage | On / off |  | true | Shows savings in brackets, e.g. (20% OFF), next to discounted prices. |
 | Show product vendor | On / off |  | false |  |
 | Product card alignment | Choice | Left · Center · Right | left |  |
+
+
+**Pagination**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Pagination type | Choice | Pagination (page by page) · Infinite scroll · Load more button | pagination | Infinite scroll and Load more fetch additional pages automatically as visitors browse. |
+| Show progress indicator | On / off |  | true | Displays a progress bar and "Viewed X of Y products" text above the load control. Only applies to Infinite scroll and Load more button. |
 
 
 **Filtering and sorting**
@@ -2326,7 +2344,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Link column width | Slider | 120–240 px | 160 |  |
-| Promo tile shape | Choice | Tall (2:3) · Square (1:1) · Wide (4:3) | tall | Applies to both tiles, on desktop and in the mobile menu. |
+| Promo tile shape | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | tall | Applies to both tiles, on desktop and in the mobile menu. |
 | Promo area width | Slider | 25–55 % | 38 | Share of the mega menu the tiles take up. The link columns fill the rest. |
 
 
@@ -2337,6 +2355,8 @@ _No section-level settings._
 | Image | Image |  |  |  |
 | Heading | Text |  |  |  |
 | Subheading | Text |  |  |  |
+| Show in mobile drawer | On / off |  | true |  |
+| Overlay text on image | On / off |  | true | When off, the text sits below the image instead of layered on top of it. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_left |  |
 | Link | Link |  |  |  |
 | Button label | Text |  |  | Optional. Leave blank to hide the button — the whole tile is clickable either way. |
@@ -2350,6 +2370,8 @@ _No section-level settings._
 | Image | Image |  |  |  |
 | Heading | Text |  |  |  |
 | Subheading | Text |  |  |  |
+| Show in mobile drawer | On / off |  | true |  |
+| Overlay text on image | On / off |  | true | When off, the text sits below the image instead of layered on top of it. |
 | Content position | Choice | Top left · Top center · Top right · Center left · Center · Center right · Bottom left · Bottom center · Bottom right | bottom_left |  |
 | Link | Link |  |  |  |
 | Button label | Text |  |  | Optional. Leave blank to hide the button — the whole tile is clickable either way. |
@@ -2373,7 +2395,7 @@ _No section-level settings._
 | Collection | Collection |  |  |  |
 | Heading | Text |  | Trending now |  |
 | Number of products | Slider | 3–12 | 6 |  |
-| Image ratio | Choice | Square (1:1) · Portrait (3:4) | square |  |
+| Image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | square |  |
 | Layout | Choice | Carousel · Stack (scrollable) | carousel | Carousel scrolls sideways with arrow buttons. Stack shows a multi-column grid that scrolls vertically. |
 | Products per row | Choice | 3 · 4 | 4 |  |
 | Show vendor | On / off |  | false |  |
@@ -2523,6 +2545,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Text | Text |  | Subheading |  |
+| Text size (desktop) | Choice | Extra small · Small · Medium · Large | medium |  |
+| Text size (mobile) | Choice | Extra small · Small · Medium · Large | medium |  |
 
 #### Heading
 
@@ -2530,6 +2554,8 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | Image with text overlay |  |
 | Heading tag | Choice | H1 · H2 · H3 · H4 | h2 | Choose H1 for page hero headings for better SEO. |
+| Heading font size (desktop) | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h2 |  |
+| Heading font size (mobile) | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h2 |  |
 
 #### Text
 
@@ -3653,6 +3679,10 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
+| Popup style | Choice | Centered · Corner slide-in | modal | Corner slide-in does not dim or block the rest of the page. |
+| Corner | Choice | Bottom left · Bottom right | bottom-right |  |
+| Corner width | Slider | 280–520 px | 380 | Applies on desktop. The card is edge-to-edge on mobile. |
+| Corner height | Slider | 280–640 px | 420 | Content taller than this scrolls inside the card. Applies on desktop; sizes to its content on mobile. |
 | Media position | Choice | Left · Right | left | Applies on desktop. The image always sits above the text on mobile. |
 | Image ratio | Choice | Landscape (3:2) · Portrait (4:5) · Square (1:1) · Wide (16:9) | landscape |  |
 | Maximum width | Slider | 360–1000 px | 880 |  |

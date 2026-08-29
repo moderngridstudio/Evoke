@@ -30,7 +30,14 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Heading font | Font |  | cormorant_n4 |  |
 | Price font | Font |  | work_sans_n4 | Used for prices, totals, and cart line items. A plain sans-serif is recommended so numbers stay legible even if your primary font is decorative. |
 | Body text size | Slider | 14–20 px | 16 |  |
-| Heading letter case | Choice | Original · Uppercase | none |  |
+| Heading letter case | Choice | Original · Uppercase · Lowercase | none |  |
+
+
+**Logo**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Text size | Slider | 12–48 px | 16 | Applies when no logo image is uploaded — your shop name is shown as text instead. |
 
 ## Layout
 
@@ -54,7 +61,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Button letter case | Choice | Original · Uppercase | none |  |
+| Button letter case | Choice | Original · Uppercase · Lowercase | none |  |
 | Button text size | Slider | 12–20 px | 14 |  |
 | Button border width | Slider | 0–3 px | 1 |  |
 
@@ -102,19 +109,22 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Button position | Choice | Corner — bottom right · Bar — centered at bottom · Overlay — image center | bottom-bar | Where the Quick Look button appears on the product card. |
+| Button position | Choice | Corner · Bar — centered at bottom · Overlay — image center | bottom-bar | Where the Quick Look button appears on the product card. |
+| Corner | Choice | Bottom right · Bottom left · Top right · Top left | bottom-right |  |
 | Button style | Choice | Icon + text · Icon only · Text only | icon_text |  |
 | Button label | Text |  | Quick Look | Applies when button style includes text. |
 | Show button on hover only | On / off |  | true | When off, the button is always visible without needing to hover the card. |
 | Button icon size | Slider | 12–24 px | 16 |  |
 | Button padding | Choice | Small — compact · Medium — default · Large — spacious | small |  |
+| Button corner radius | Slider | 0–100 px | 100 | 0 is square, 100 is a full pill. Applies on both desktop and mobile. |
 
 
 **Card button — mobile**
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Button position (mobile) | Choice | Corner — bottom right · Bar — centered at bottom · Overlay — image center | corner | Overrides button position on screens below 750px. |
+| Button position (mobile) | Choice | Corner · Bar — centered at bottom · Overlay — image center | corner | Overrides button position on screens below 750px. |
+| Corner (mobile) | Choice | Bottom right · Bottom left · Top right · Top left | bottom-right |  |
 | Button style (mobile) | Choice | Icon + text · Icon only · Text only | icon | Overrides button style on screens below 750px. Icon only is recommended for compact cards. |
 | Show button on hover only (mobile) | On / off |  | false | Mobile devices have no hover state, so leaving this off keeps the button always visible on touch screens. |
 
@@ -126,7 +136,28 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Modal width | Slider | 640–1200 px | 960 | Maximum width of the Quick Look panel. Automatically shrinks on smaller screens. |
 | Modal height | Slider | 400–800 px | 680 | Fixed height of the Quick Look panel. The right-side details scroll within this height. |
 | Gallery style | Choice | Classic — hero image + thumbnails · Scroll — images stacked vertically · Grid — 2-column editorial layout | grid |  |
-| Image ratio (scroll and grid) | Choice | Square (1:1) · Portrait (4:5) | portrait | Applies when Gallery style is Scroll or Grid. |
+| Image ratio (scroll and grid) | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | portrait | Applies when Gallery style is Scroll or Grid. |
+| Show quantity selector | On / off |  | true | Lets a shopper choose how many to add without leaving the modal. |
+
+
+**Product description**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show product description | On / off |  | true | Shows the product's own description under the price, shortened with a Read more link. |
+| Lines before Read more | Slider | 2–10 t:settings_schema.quick_look.settings.quick_look_description_lines.unit | 3 | How much of the description stays visible while it is collapsed. |
+
+
+**Size guide**
+
+
+> Adds a size guide link beside the matching option inside the Quick Look modal. Pick the page holding your size chart — its content opens in a panel over the modal, so the shopper never leaves the collection.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Size guide page | Page |  |  | Leave empty to hide the size guide link. |
+| Size option name | Text |  | Size | Must match the product option, for example Size. Case and spacing are ignored. |
+| Link label | Text |  | Size guide |  |
 
 
 **Highlights**
