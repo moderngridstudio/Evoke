@@ -1138,7 +1138,10 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Collections shown | Choice | All collections · Selected collections | all | All lists every collection that has products, with pagination. Selected uses only the collection blocks you add below. |
+| Collections to exclude | Collections |  |  | Applies when Collections shown is set to All collections. |
 | Collections per page | Slider | 2–20 | 8 | Applies when Collections shown is set to All collections. |
+| Pagination type | Choice | Pagination (page by page) · Infinite scroll · Load more button | pagination | Infinite scroll and Load more fetch additional pages automatically as visitors browse. |
+| Show progress indicator | On / off |  | true | Displays a progress bar and "Viewed X of Y collections" text above the load control. Only applies to Infinite scroll and Load more button. |
 | Space between collections | Slider | 32–128 px | 64 |  |
 | Show dividers | On / off |  | true |  |
 
@@ -1160,6 +1163,7 @@ _No section-level settings._
 | Layout (desktop) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | carousel | Stacked shows a wrapping grid. Carousel lets customers swipe through one look at a time. |
 | Layout (mobile) | Choice | Stacked (vertical scroll) · Carousel (one look at a time) | stacked | Applies below 750px, independently of the desktop setting above. |
 | Products per row (desktop) | Slider | 2–5 | 4 |  |
+| Product alignment | Choice | Left · Center · Right | left | Applies when a collection has fewer products than Products per row. |
 | Products to show | Slider | 2–12 | 8 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | portrait |  |
 | Show product vendor | On / off |  | false |  |
