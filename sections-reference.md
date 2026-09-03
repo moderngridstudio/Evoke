@@ -124,7 +124,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Text | Text |  | Free shipping on orders over $50 |  |
+| Text | Text |  | Free shipping on orders over $150 |  |
 | Link | Link |  |  |  |
 | Icon | Choice | None · Cake · Checkmark · Clock · Crown · Customer service · Delivery · Eco · Email · Exchange · Fire · Gift · Globe · Heart · Info · Map pin · Phone · Price tag · Sparkles · Star · Store · Truck · Wallet | none |  |
 

@@ -11,6 +11,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 - [Inventory](#inventory)
 - [Color swatches](#color-swatches)
 - [Quick look](#quick-look)
+- [Size guide](#size-guide)
 - [Cart](#cart)
 - [Social media](#social-media)
 - [Icons](#icons)
@@ -77,6 +78,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Show sale badges | On / off |  | true |  |
 | Show sold out badges | On / off |  | true |  |
+| "New" badge tag | Text |  | new | Products carrying this tag show a "New" badge on the product page and in Quick look. Upper or lower case makes no difference. Leave empty to turn the badge off. |
 | Show product ratings when available | On / off |  | true | Uses the standard product review metafields provided by compatible review apps. |
 
 ## Inventory
@@ -145,19 +147,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show product description | On / off |  | true | Shows the product's own description under the price, shortened with a Read more link. |
-| Lines before Read more | Slider | 2–10 t:settings_schema.quick_look.settings.quick_look_description_lines.unit | 3 | How much of the description stays visible while it is collapsed. |
-
-
-**Size guide**
-
-
-> Adds a size guide link beside the matching option inside the Quick Look modal. Pick the page holding your size chart — its content opens in a panel over the modal, so the shopper never leaves the collection.
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Size guide page | Page |  |  | Leave empty to hide the size guide link. |
-| Size option name | Text |  | Size | Must match the product option, for example Size. Case and spacing are ignored. |
-| Link label | Text |  | Size guide |  |
+| Lines before Read more | Slider | 2–10 L | 3 | How much of the description stays visible while it is collapsed. |
 
 
 **Highlights**
@@ -165,8 +155,11 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show highlights row | On / off |  | true | The three short selling points shown under the buy buttons. |
+| Icon | Choice | Shipping · Returns · Secure · Globe · Gift · Check | globe |  |
 | Highlight 1 | Text |  | Worldwide shipping |  |
+| Icon | Choice | Shipping · Returns · Secure · Globe · Gift · Check | returns |  |
 | Highlight 2 | Text |  | Easy returns |  |
+| Icon | Choice | Shipping · Returns · Secure · Globe · Gift · Check | gift |  |
 | Highlight 3 | Text |  | Send as a gift |  |
 
 
@@ -184,6 +177,33 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | FAQ 4 — question | Text |  | Is gift wrapping available? |  |
 | FAQ 4 — answer | Text (multi-line) |  | Absolutely. Add a gift note at checkout and we will wrap it beautifully for you. |  |
 
+## Size guide
+
+
+> Adds a size guide link beside the matching option, on the product page and inside Quick Look. Pick the page holding your size chart — its content opens in a panel, so the shopper never leaves what they were looking at.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show size guide | On / off |  | false | Off until you turn it on, so the example measurements below are never shown to shoppers by mistake. |
+| Size guide page | Page |  |  | Used by every product unless one names its own chart in the custom.size_chart metafield. Leave empty to hide the link. |
+| Size option name | Text |  | Size | Must match the product option, for example Size. Case and spacing are ignored. |
+| Link label | Text |  | Size guide |  |
+
+
+**Or build a table here**
+
+
+> Fill this in instead of picking a page, if all you need is a table. Anything typed here is used unless a product names its own size chart page.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Column headings | Text |  | Size, Chest, Waist, Length | Separated by commas. |
+| Rows | Text (multi-line) |  | XS, 81, 61, 66 S, 86, 66, 68 M, 91, 71, 70 L, 96, 76, 72 XL, 101, 81, 74 | One size per line, cells separated by commas. The first cell of each line is the size. |
+| Unit label | Text |  | cm |  |
+| Rows in a second unit | Text (multi-line) |  | XS, 32, 24, 26 S, 34, 26, 26.5 M, 36, 28, 27.5 L, 38, 30, 28.5 XL, 40, 32, 29 | Optional. Fill this in to give shoppers a toggle — the same sizes converted. Leave empty for no toggle. |
+| Second unit label | Text |  | in |  |
+| Note below the table | Rich text |  | &lt;p&gt;Measurements are of the garment laid flat, doubled where relevant. If you are between sizes, size up for a relaxed fit.&lt;/p&gt; | Optional. Somewhere to explain how to measure. |
+
 ## Cart
 
 | Setting | Type | Options | Default | Notes |
@@ -200,7 +220,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Enable free shipping progress bar | On / off |  | false |  |
-| Free shipping threshold | Slider | 0–500 $ | 100 | Set to 0 to hide. Does not automatically apply a shipping discount — configure that separately in Settings &gt; Shipping. |
+| Free shipping threshold | Slider | 0–500 $ | 150 | Set to 0 to hide. Does not automatically apply a shipping discount — configure that separately in Settings &gt; Shipping. |
 
 ## Social media
 

@@ -48,7 +48,7 @@ function settingsTable(settings) {
     const type = TYPE_LABEL[s.type] || s.type;
     let opts = '';
     if (Array.isArray(s.options)) opts = s.options.map((o) => t(o.label)).filter(Boolean).join(' · ');
-    if (s.type === 'range') opts = `${s.min}–${s.max}${s.unit ? ' ' + s.unit : ''}`;
+    if (s.type === 'range') opts = `${s.min}–${s.max}${s.unit ? ' ' + t(s.unit) : ''}`;
     const info = s.info ? t(s.info) : '';
     const dflt = s.default !== undefined && typeof s.default !== 'object' ? String(s.default) : '';
     rows.push([label, type, opts, dflt, info]);
