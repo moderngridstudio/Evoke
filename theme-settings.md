@@ -76,9 +76,10 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
+| Maximum title lines | Slider | 0–4 L | 0 | Trim card titles to this many lines and end them with an ellipsis. Set to 0 to let titles wrap freely. |
 | Show sale badges | On / off |  | true |  |
 | Show sold out badges | On / off |  | true |  |
-| "New" badge tag | Text |  | new | Products carrying this tag show a "New" badge on the product page and in Quick look. Upper or lower case makes no difference. Leave empty to turn the badge off. |
+| "New" badge tag | Text |  | new | Products carrying this tag show a "New" badge on product cards, on the product page and in Quick look. Upper or lower case makes no difference. Leave empty to turn the badge off. |
 | Show product ratings when available | On / off |  | true | Uses the standard product review metafields provided by compatible review apps. |
 
 ## Inventory

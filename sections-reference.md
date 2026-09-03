@@ -1081,7 +1081,7 @@ _No section-level settings._
 | Grid spacing | Choice | Extra small · Small · Medium · Large · Extra large | 16 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | three-four |  |
 | Show secondary image on hover | On / off |  | true |  |
-| Show full product title | On / off |  | true | If unchecked, long titles containing colons (:) or dashes (-) will be split based on the structured title handling setting below. |
+| Show full title, including any : or - suffix | On / off |  | true | Uncheck to keep only one side of a title that contains a colon or a dash — useful when titles carry a colour or variant suffix. Which side is kept is set below. Title length is controlled separately, in Theme settings → Product cards → Maximum title lines. |
 | Structured title handling | Choice | Show part after special character · Show part before special character | after | Applies only when 'Show full product title' is unchecked. |
 | Show discount percentage | On / off |  | true | Shows savings in brackets, e.g. (20% OFF), next to discounted prices. |
 | Show product vendor | On / off |  | false |  |
@@ -3984,7 +3984,6 @@ _No section-level settings._
 | Products per row (mobile) | Choice | 1 product · 2 products | 2 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | three-four |  |
 | Show secondary image on hover | On / off |  | true |  |
-| Show full product title | On / off |  | true |  |
 | Show discount percentage | On / off |  | true |  |
 | Show product vendor | On / off |  | false |  |
 | Product card alignment | Choice | Left · Center · Right | left |  |
