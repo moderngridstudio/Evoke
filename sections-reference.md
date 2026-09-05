@@ -241,6 +241,16 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 ### Settings
 
 
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  |  |  |
+| Description | Rich text |  |  |  |
+| Heading alignment | Choice | Left · Center · Right | center |  |
+| Spacing below heading | Slider | 0–80 px | 40 |  |
+
+
 **Images**
 
 | Setting | Type | Options | Default | Notes |
@@ -2521,6 +2531,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Animation style | Choice | Parallax · Sticky content · None | none | Parallax won't trigger when 'Section height' is set to 'Original'. |
+| Parallax intensity | Choice | Subtle · Medium · Strong | medium | How far the image drifts as the section scrolls past. |
 
 
 **Layout**
