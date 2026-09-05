@@ -1234,6 +1234,13 @@ _No section-level settings._
 | Alignment | text_alignment |  | center |  |
 
 
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Content width | Choice | Narrow · Medium · Wide | medium |  |
+
+
 **Spacing**
 
 | Setting | Type | Options | Default | Notes |
