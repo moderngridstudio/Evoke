@@ -2330,6 +2330,10 @@ _No section-level settings._
 | Float offset | Slider | 0–32 px | 4 | How far the header drops from the viewport top when floating. 0 = flush with top edge. |
 | Shrink width on scroll — desktop | On / off |  | false | Narrows the header visual to page width when scrolled. Works independently of float drop. |
 | Shrink width on scroll — mobile | On / off |  | false | Narrows the header visual on small screens when scrolled. Works independently of float drop. |
+| Shrink height on scroll — desktop | On / off |  | true | Reduces the header’s height once the page is scrolled. Turn this off to keep the header at full height. |
+| Shrink height on scroll — mobile | On / off |  | true | Reduces the header’s height once the page is scrolled. Turn this off to keep the header at full height. |
+| Hide on scroll — desktop | On / off |  | false | Slides the header out of view when scrolling down and brings it back when scrolling up. Turn this off to keep the header visible at all times. Requires the sticky header enabled. |
+| Hide on scroll — mobile | On / off |  | false | Slides the header out of view when scrolling down and brings it back when scrolling up. Turn this off to keep the header visible at all times. Requires the sticky header enabled. |
 
 
 **Navigation**
@@ -3604,7 +3608,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Recommendation type | Choice | Related · Complementary | related | Complementary products are set up in Shopify's Search &amp; Discovery app. Related products are chosen automatically from order history and product data. |
+| Recommendation type | Choice | Related · Complementary | related | Complementary products are set up in Shopify's Search and Discovery app. Related products are chosen automatically from order history and product data. |
 | Products to show | Slider | 2–10 | 4 |  |
 | Fall back to the product's collection | On / off |  | true | New and low-traffic stores often have no recommendations yet. With this on, the section shows other products from the same collection instead of hiding. |
 | Show demo products | On / off |  | false | Replaces real products with placeholder cards, for building out a demo store. Turn off before going live. |
@@ -4011,7 +4015,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Enable filtering | On / off |  | true | Requires filters to be configured for search results via the Search &amp; Discovery app. |
+| Enable filtering | On / off |  | true | Requires filters to be configured for search results via the Search and Discovery app. |
 | Desktop filter layout | Choice | Top bar / Mobile style · Sidebar left | topbar |  |
 
 
