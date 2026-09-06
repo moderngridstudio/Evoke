@@ -2044,7 +2044,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Column heading | Text |  | Follow us |  |
+| Column heading | Text |  | Follow us | Used only when the footer has no Social icons block. |
 | Facebook URL | Link |  |  |  |
 | Instagram URL | Link |  |  |  |
 | Twitter / X URL | Link |  |  |  |
@@ -2138,6 +2138,19 @@ _No section-level settings._
 | Image | Image |  |  |  |
 | Width | Slider | 40–500 px | 120 |  |
 | Alignment | Choice | Left · Center · Right |  |  |
+
+#### Social icons
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Follow us |  |
+| Placement | Choice | Footer column · Below the columns · Utilities bar | column | Show the icons as a footer column, on their own row beneath the columns, or down in the utilities bar beside the payment icons. |
+| Alignment (desktop) | Choice | Left · Center · Right | left |  |
+| Alignment (mobile) | Choice | Left · Center · Right | left |  |
+
+
+> Links come from Theme settings → Social media.
+
 
 > Supports app blocks — apps you install can add their own content here.
 
