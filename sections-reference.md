@@ -970,6 +970,14 @@ _No section-level settings._
 | Offset for overlay header | On / off |  | false | Enable when your header overlays the page content. Adds top padding equal to the header height. |
 
 
+**Padding**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top padding | Slider | 0–100 px | 36 |  |
+| Bottom padding | Slider | 0–100 px | 36 |  |
+
+
 **Section Heading**
 
 | Setting | Type | Options | Default | Notes |
@@ -981,6 +989,7 @@ _No section-level settings._
 | Heading alignment | Choice | Left · Center · Right | left |  |
 | Title size | Choice | Extra small · Small · Medium · Large · Extra large | md |  |
 | Title weight | Choice | Regular · Medium · Semi-bold · Bold · Extra bold | 600 |  |
+| Spacing below heading | Slider | 0–80 px | 48 |  |
 
 
 **Grid and carousel**
@@ -1007,7 +1016,7 @@ _No section-level settings._
 | Text | Color |  | #FFFFFF |  |
 | Enable card hover effects | On / off |  | true | Controls image zoom, card lift, overlay darkening, and title slide-up on hover. |
 | Enable button hover effects | On / off |  | true | Controls CTA pill brightening, arrow nudge on overlay cards, and arrow-gap animation on below-image cards. Turn off for a fully static, print-editorial feel. |
-| Image aspect ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Landscape (16:9) | portrait |  |
+| Image aspect ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) · Landscape (16:9) · Circle | portrait |  |
 | Show collection description | On / off |  | false |  |
 | Show call-to-action label | On / off |  | true |  |
 | CTA label text | Text |  | Shop now |  |
