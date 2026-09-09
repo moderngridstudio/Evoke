@@ -3720,6 +3720,7 @@ _No section-level settings._
 | Show popup | Choice | After a delay · After scrolling · On exit intent | delay |  |
 | Delay | Slider | 0–30 s | 5 | Exit intent has no cursor to track on a phone, so a delay of at least 8 seconds is used there instead. |
 | Scroll depth | Slider | 10–90 % | 30 |  |
+| Never show again | On / off |  | false | A shopper who closes the popup never sees it again on that device, so 'Show again after' is ignored. |
 | Show again after | Slider | 0–30 d | 7 | Days before a shopper who dismissed it sees it again. Set to 0 to show on every visit. |
 | Hide from logged-in customers | On / off |  | true | Existing customers are usually already subscribed. |
 | Test mode | On / off |  | false | Opens immediately and ignores the trigger and frequency. Turn off before publishing. |
