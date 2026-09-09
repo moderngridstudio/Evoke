@@ -250,6 +250,14 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Enable theme animations | On / off |  | true | System reduced-motion preferences are always respected. |
 
+
+**Scroll reveal**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Animation style | Choice | None · Fade · Fade up · Fade and scale | fade_up | Content settles into place as it scrolls into view. |
+| Animation speed | Choice | Fast · Medium · Slow | medium |  |
+
 ## Back to top
 
 | Setting | Type | Options | Default | Notes |

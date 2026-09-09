@@ -116,7 +116,9 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Let visitors close the bar | On / off |  | false | Once a visitor closes it, it stays closed for them until you change the announcement text. Always visible here in the editor. |
+| Let visitors close the bar | On / off |  | false | Visitors get a close button. 'Show again after' sets how long it stays closed for them, and changing the announcement text always brings it back. Always visible here in the editor. |
+| Never show again | On / off |  | false | A visitor who closes the bar never sees it again, so 'Show again after' is ignored. Changing the announcement text still brings it back for everyone. |
+| Show again after | Slider | 0–30 d | 7 | Days before a shopper who closed the bar sees it again. Set to 0 to bring it back on their next visit. |
 
 ### Blocks
 
@@ -4722,6 +4724,7 @@ _No section-level settings._
 | Show on... | Choice | All pages · Home page only | all |  |
 | Show on exit intent (desktop) | On / off |  | false | The popup will only show when the user moves the cursor away from the store. |
 | Show after | Slider | 0–30 s | 0 | Delay is disabled in theme editor for visibility. Does not apply to 'Exit intent'. |
+| Never show again | On / off |  | false | A shopper who closes the popup never sees it again on that device, so 'Frequency' is ignored. |
 | Frequency | Slider | 0–30 d | 0 | Number of days before a dismissed popup reappears. |
 | Disable for account holders | On / off |  | false | Will not be shown to customers who have created an account. |
 
