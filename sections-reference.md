@@ -117,6 +117,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Let visitors close the bar | On / off |  | false | Visitors get a close button. 'Show again after' sets how long it stays closed for them, and changing the announcement text always brings it back. Always visible here in the editor. |
+| Close button (mobile) | Choice | Match desktop · Show close button · No close button | follow | Override the desktop choice on screens below 750 px, where the bar takes a much larger share of what a visitor can see. |
 | Never show again | On / off |  | false | A visitor who closes the bar never sees it again, so 'Show again after' is ignored. Changing the announcement text still brings it back for everyone. |
 | Show again after | Slider | 0–30 d | 7 | Days before a shopper who closed the bar sees it again. Set to 0 to bring it back on their next visit. |
 
