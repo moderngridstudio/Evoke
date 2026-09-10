@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Which source wins — Product content — Evoke docs</title>
+<meta name="description" content="Which source wins — Product content for the Evoke Shopify theme.">
+<link rel="stylesheet" href="../../assets/docs.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23f4f1ec' text-anchor='middle'>E</text></svg>">
+</head>
+<body class="page-article">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="../../index.html">
+      <span class="brand__mark">Evoke</span>
+      <span class="brand__sub">docs</span>
+    </a>
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitenav">
+      <span></span><span></span><span></span>
+      <em class="vh">Menu</em>
+    </button>
+    <nav class="nav" id="sitenav">
+      <a class="nav__link" href="../../getting-started/index.html">Getting started</a><a class="nav__link is-active" href="../../product-content/index.html">Product content</a><a class="nav__link" href="../../theme-settings/index.html">Theme settings</a><a class="nav__link" href="../../sections/index.html">Sections reference</a><a class="nav__link" href="../../faq/index.html">FAQs</a><a class="nav__link" href="../../support/index.html">Support</a>
+      <a class="nav__link nav__link--cta" href="../../support/index.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="wrap wrap--doc">
+  <aside class="sidebar">
+    <p class="sidebar__title">Product content</p>
+    <nav class="sidenav"><a class="sidenav__link" href="../../product-content/size-guide/index.html">Size guide</a><a class="sidenav__link" href="../../product-content/a-different-size-chart-per-product/index.html">A different size chart per product</a><a class="sidenav__link" href="../../product-content/product-faqs/index.html">Product FAQs</a><a class="sidenav__link" href="../../product-content/different-faqs-per-product/index.html">Different FAQs per product</a><a class="sidenav__link" href="../../product-content/creating-the-metaobject-definitions/index.html">Creating the metaobject definitions</a><a class="sidenav__link is-current" href="../../product-content/which-source-wins/index.html">Which source wins</a></nav>
+  </aside>
+
+  <article class="doc">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Docs</a><em aria-hidden="true">/</em><a href="../../product-content/index.html">Product content</a><em aria-hidden="true">/</em><span>Which source wins</span></nav>
+    <h1 class="doc__title">Which source wins</h1>
+    <nav class="toc" aria-label="On this page">
+         <p class="toc__title">On this page</p>
+         <a class="toc__link" href="#size-guide">Size guide</a><a class="toc__link" href="#faqs">FAQs</a><a class="toc__link" href="#if-nothing-appears">If nothing appears</a>
+       </nav>
+    <div class="prose"><p>Evoke always uses the most specific source a product actually has, and each step tests for real content — a metaobject that was linked but never filled in, or a page since deleted, falls through to the next source instead of turning the feature off for that one product.</p>
+<h3 id="size-guide">Size guide</h3>
+<div class="table-wrap"><table><thead><tr><th></th><th>Source</th></tr></thead><tbody><tr><td data-label="">1</td><td data-label="Source"><code>custom.size_chart</code> → a Size chart metaobject</td></tr><tr><td data-label="">2</td><td data-label="Source"><code>custom.size_chart_rows</code> → rows typed on the product</td></tr><tr><td data-label="">3</td><td data-label="Source"><code>custom.size_chart</code> → a page</td></tr><tr><td data-label="">4</td><td data-label="Source"><strong>Theme settings → Size guide</strong> → the table</td></tr><tr><td data-label="">5</td><td data-label="Source"><strong>Theme settings → Size guide</strong> → the size guide page</td></tr></tbody></table></div>
+<h3 id="faqs">FAQs</h3>
+<div class="table-wrap"><table><thead><tr><th></th><th>Source</th></tr></thead><tbody><tr><td data-label="">1</td><td data-label="Source"><code>custom.faqs</code> → Product FAQ metaobjects</td></tr><tr><td data-label="">2</td><td data-label="Source"><code>custom.faqs_text</code> → questions typed on the product</td></tr><tr><td data-label="">3</td><td data-label="Source"><strong>Theme settings → Quick look → FAQs</strong> → the four store-wide questions</td></tr></tbody></table></div>
+<h3 id="if-nothing-appears">If nothing appears</h3>
+<ul><li><strong>Size guide link is missing.</strong> Check <strong>Show size guide</strong> is on, and that <strong>Size option name</strong> matches the product's option. A product with no size option never shows the link.</li><li><strong>The wrong chart appears.</strong> Something further up the list is set. A store-wide table you forgot to clear beats a size guide page.</li><li><strong>FAQs are missing.</strong> Check <strong>Show FAQ section</strong> in <strong>Theme settings → Quick look</strong>, and remember they only appear inside Quick Look, not on the product page.</li></ul></div>
+    <nav class="pager">
+          <a class="pager__link pager__link--prev" href="../../product-content/creating-the-metaobject-definitions/index.html">
+                   <span class="pager__dir">Previous</span><span class="pager__title">Creating the metaobject definitions</span></a>
+          <span></span>
+        </nav>
+    <div class="helpful">
+      <p>Still stuck? <a href="../../support/index.html">Contact support</a> and include your store URL.</p>
+    </div>
+  </article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">© 2026 Modern Grid. Evoke theme documentation.</p>
+    <nav class="footer__links">
+      <a href="../../index.html">Home</a>
+      <a href="../../support/index.html">Support</a>
+      
+    </nav>
+  </div>
+</footer>
+
+<script src="../../assets/docs.js" defer></script>
+</body>
+</html>

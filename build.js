@@ -35,6 +35,12 @@ const CATEGORIES = [
     blurb: 'Install the theme and get your store looking like yours — logo, colors, fonts and a first homepage.',
   },
   {
+    slug: 'product-content',
+    file: 'product-content.md',
+    title: 'Product content',
+    blurb: 'Size guides and FAQs — set once for the whole store, or per product with metafields and metaobjects.',
+  },
+  {
     slug: 'theme-settings',
     file: 'theme-settings.md',
     title: 'Theme settings',

@@ -167,7 +167,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 **FAQs**
 
 
-> These questions show on every product. To give one product its own instead, fill in its custom.faqs metafield — a product with its own questions shows only those, whether or not this is switched on. [How to set these up](https://moderngridstudio.github.io/Evoke/faq/products/index.html)
+> These questions show on every product. To give one product its own instead, fill in its custom.faqs metafield — a product with its own questions shows only those, whether or not this is switched on. [How to set these up](https://moderngridstudio.github.io/Evoke/product-content/different-faqs-per-product/index.html)
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
@@ -212,7 +212,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 **Charts for one product**
 
 
-> Everything above applies to every product. To give one product its own chart, point its custom.size_chart metafield at a Size chart metaobject — one entry can be shared by every product cut to it — or at a page. For a single odd product, type its rows into custom.size_chart_rows instead. [How to set these up](https://moderngridstudio.github.io/Evoke/faq/products/index.html)
+> Everything above applies to every product. To give one product its own chart, point its custom.size_chart metafield at a Size chart metaobject — one entry can be shared by every product cut to it — or at a page. For a single odd product, type its rows into custom.size_chart_rows instead. [How to set these up](https://moderngridstudio.github.io/Evoke/product-content/a-different-size-chart-per-product/index.html)
 
 
 ## Cart

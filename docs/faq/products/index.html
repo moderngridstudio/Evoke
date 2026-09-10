@@ -22,7 +22,7 @@
       <em class="vh">Menu</em>
     </button>
     <nav class="nav" id="sitenav">
-      <a class="nav__link" href="../../getting-started/index.html">Getting started</a><a class="nav__link" href="../../theme-settings/index.html">Theme settings</a><a class="nav__link" href="../../sections/index.html">Sections reference</a><a class="nav__link is-active" href="../../faq/index.html">FAQs</a><a class="nav__link" href="../../support/index.html">Support</a>
+      <a class="nav__link" href="../../getting-started/index.html">Getting started</a><a class="nav__link" href="../../product-content/index.html">Product content</a><a class="nav__link" href="../../theme-settings/index.html">Theme settings</a><a class="nav__link" href="../../sections/index.html">Sections reference</a><a class="nav__link is-active" href="../../faq/index.html">FAQs</a><a class="nav__link" href="../../support/index.html">Support</a>
       <a class="nav__link nav__link--cta" href="../../support/index.html">Contact</a>
     </nav>
   </div>
@@ -56,22 +56,12 @@
 <p>Complementary products are configured in Shopify's <strong>Search &amp; Discovery</strong> app. Related products are chosen automatically from order history and product data, and need no setup — but new stores often have no data yet.</p>
 <p>If the section is empty on a new store, turn on <strong>Fall back to the product's collection</strong> so it shows other products from the same collection instead of hiding.</p>
 <h3 id="can-each-product-have-its-own-size-chart">Can each product have its own size chart?</h3>
-<p>Yes — three ways, and Evoke uses the most specific one a product actually has.</p>
-<p><strong>A shared chart.</strong> This is the one to reach for if more than a handful of products need charts. Create a metaobject definition called <strong>Size chart</strong> with these fields, then add one entry per chart you really use — "Women's tops", "Men's denim":</p>
-<div class="table-wrap"><table><thead><tr><th>Field name</th><th>Type</th></tr></thead><tbody><tr><td data-label="Field name"><code>columns</code></td><td data-label="Type">Single line text</td></tr><tr><td data-label="Field name"><code>rows</code></td><td data-label="Type">Multi-line text</td></tr><tr><td data-label="Field name"><code>unit_primary</code></td><td data-label="Type">Single line text</td></tr><tr><td data-label="Field name"><code>rows_alt</code></td><td data-label="Type">Multi-line text — optional</td></tr><tr><td data-label="Field name"><code>unit_alt</code></td><td data-label="Type">Single line text — optional</td></tr><tr><td data-label="Field name"><code>note</code></td><td data-label="Type">Rich text — optional</td></tr></tbody></table></div>
-<p>Then add a product metafield <code>custom.size_chart</code> of type <strong>Metaobject reference → Size chart</strong>, and pick the entry on each product. Every product cut to the same chart points at the same entry, so a correction lands on all of them at once.</p>
-<p><code>rows</code> and <code>rows_alt</code> take the same format as <strong>Theme settings → Size guide</strong>: one size per line, cells separated by commas, first cell is the size. Fill in <code>rows_alt</code> to give shoppers the unit toggle.</p>
-<p><strong>A page.</strong> Set <code>custom.size_chart</code> to a <strong>Page reference</strong> instead and pick a page. Any page content works, but you lose the unit toggle and the row that highlights as the shopper picks their size.</p>
-<p><strong>One odd product.</strong> Add a <code>custom.size_chart_rows</code> metafield of type <strong>Multi-line text</strong> and type the rows straight onto the product. Column headings, units and the note come from <strong>Theme settings → Size guide</strong>, so only the numbers are yours.</p>
-<p>A product with none of these falls back to the store-wide table in <strong>Theme settings → Size guide</strong>, and to the size guide page after that.</p>
+<p>Yes. Point the product's <code>custom.size_chart</code> metafield at a <strong>Size chart</strong> metaobject — reusable across every product that shares it — or at a page. For a single odd product, type its rows into <code>custom.size_chart_rows</code> instead.</p>
+<p>A product with none of these falls back to the store-wide table in <strong>Theme settings → Size guide</strong>. Full walkthrough in <a href="../../product-content/index.html">Product content</a>.</p>
 <h3 id="can-each-product-have-its-own-faqs">Can each product have its own FAQs?</h3>
-<p>Yes. Create a metaobject definition called <strong>Product FAQ</strong> with a <code>question</code> field (single line text) and an <code>answer</code> field (rich text), then add one entry per question — "Do these run large?", "How long does delivery take?".</p>
-<p>Add a product metafield <code>custom.faqs</code> of type <strong>Metaobject reference → Product FAQ</strong> with <strong>List of values</strong> turned on, so a product can carry several. Entries are reusable: write the shipping answer once and attach it to everything.</p>
-<p>For a one-off, a <code>custom.faqs_text</code> metafield of type <strong>Multi-line text</strong> works too — one FAQ per line, question and answer separated by a pipe:</p>
-<pre><code>Do these run large? | They fit true to size. Between sizes, size down.
-When will it ship? | Within two working days.</code></pre>
-<p>A product with FAQs of its own shows only those, whether or not <strong>Show FAQs</strong> is on in <strong>Theme settings → Quick look</strong>. Products without them fall back to the four questions there, which do have to be switched on.</p>
-<p>FAQs appear inside <strong>Quick Look</strong>.</p></div>
+<p>Yes. Add a <code>custom.faqs</code> metafield of type <strong>Metaobject reference → Product FAQ</strong> with <strong>List of values</strong> turned on, so questions can be written once and attached to many products. For a one-off, <code>custom.faqs_text</code> takes one <code>Question | Answer</code> per line.</p>
+<p>A product with FAQs of its own shows only those, whether or not <strong>Show FAQ section</strong> is on. Full walkthrough in <a href="../../product-content/index.html">Product content</a>.</p>
+<p>FAQs appear inside <strong>Quick Look</strong>, not on the product page.</p></div>
     <nav class="pager">
           <a class="pager__link pager__link--prev" href="../../faq/setup/index.html">
                    <span class="pager__dir">Previous</span><span class="pager__title">Setup</span></a>
