@@ -4712,7 +4712,7 @@ _No section-level settings._
 | Show button on video click | On / off |  | false |  |
 | Link | Link |  |  |  |
 | Button label | Text |  | Explore our collections |  |
-| End screen color scheme | Choice | General · First · Second · Third | scheme-3 |  |
+| End screen color scheme | Color scheme |  | scheme-2 |  |
 | Override button colors | On / off |  | false | Enable to reveal button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text color | Color |  | #FFFFFF |  |

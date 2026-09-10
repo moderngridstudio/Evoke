@@ -54,6 +54,48 @@ Complementary products are configured in Shopify's **Search & Discovery** app. R
 
 If the section is empty on a new store, turn on **Fall back to the product's collection** so it shows other products from the same collection instead of hiding.
 
+### Can each product have its own size chart?
+
+Yes — three ways, and Evoke uses the most specific one a product actually has.
+
+**A shared chart.** This is the one to reach for if more than a handful of products need charts. Create a metaobject definition called **Size chart** with these fields, then add one entry per chart you really use — "Women's tops", "Men's denim":
+
+| Field name | Type |
+|---|---|
+| `columns` | Single line text |
+| `rows` | Multi-line text |
+| `unit_primary` | Single line text |
+| `rows_alt` | Multi-line text — optional |
+| `unit_alt` | Single line text — optional |
+| `note` | Rich text — optional |
+
+Then add a product metafield `custom.size_chart` of type **Metaobject reference → Size chart**, and pick the entry on each product. Every product cut to the same chart points at the same entry, so a correction lands on all of them at once.
+
+`rows` and `rows_alt` take the same format as **Theme settings → Size guide**: one size per line, cells separated by commas, first cell is the size. Fill in `rows_alt` to give shoppers the unit toggle.
+
+**A page.** Set `custom.size_chart` to a **Page reference** instead and pick a page. Any page content works, but you lose the unit toggle and the row that highlights as the shopper picks their size.
+
+**One odd product.** Add a `custom.size_chart_rows` metafield of type **Multi-line text** and type the rows straight onto the product. Column headings, units and the note come from **Theme settings → Size guide**, so only the numbers are yours.
+
+A product with none of these falls back to the store-wide table in **Theme settings → Size guide**, and to the size guide page after that.
+
+### Can each product have its own FAQs?
+
+Yes. Create a metaobject definition called **Product FAQ** with a `question` field (single line text) and an `answer` field (rich text), then add one entry per question — "Do these run large?", "How long does delivery take?".
+
+Add a product metafield `custom.faqs` of type **Metaobject reference → Product FAQ** with **List of values** turned on, so a product can carry several. Entries are reusable: write the shipping answer once and attach it to everything.
+
+For a one-off, a `custom.faqs_text` metafield of type **Multi-line text** works too — one FAQ per line, question and answer separated by a pipe:
+
+```
+Do these run large? | They fit true to size. Between sizes, size down.
+When will it ship? | Within two working days.
+```
+
+A product with FAQs of its own shows only those, whether or not **Show FAQs** is on in **Theme settings → Quick look**. Products without them fall back to the four questions there, which do have to be switched on.
+
+FAQs appear inside **Quick Look**.
+
 ---
 
 ## Collections and search

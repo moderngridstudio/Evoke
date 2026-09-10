@@ -166,6 +166,9 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 **FAQs**
 
+
+> These questions show on every product. To give one product its own instead, fill in its custom.faqs metafield — a product with its own questions shows only those, whether or not this is switched on. [How to set these up](https://moderngridstudio.github.io/Evoke/faq/products/index.html)
+
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show FAQ section | On / off |  | true |  |
@@ -186,7 +189,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show size guide | On / off |  | false | Off until you turn it on, so the example measurements below are never shown to shoppers by mistake. |
-| Size guide page | Page |  |  | Used by every product unless one names its own chart in the custom.size_chart metafield. Leave empty to hide the link. |
+| Size guide page | Page |  |  | The last fallback — used only when a product has no chart of its own and the table below is empty. Leave empty to hide the link. |
 | Size option name | Text |  | Size | Must match the product option, for example Size. Case and spacing are ignored. |
 | Link label | Text |  | Size guide |  |
 
@@ -194,7 +197,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 **Or build a table here**
 
 
-> Fill this in instead of picking a page, if all you need is a table. Anything typed here is used unless a product names its own size chart page.
+> Fill this in instead of picking a page, if all you need is a table. Used on every product that does not carry a chart of its own.
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
@@ -204,6 +207,13 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Rows in a second unit | Text (multi-line) |  | XS, 32, 24, 26 S, 34, 26, 26.5 M, 36, 28, 27.5 L, 38, 30, 28.5 XL, 40, 32, 29 | Optional. Fill this in to give shoppers a toggle — the same sizes converted. Leave empty for no toggle. |
 | Second unit label | Text |  | in |  |
 | Note below the table | Rich text |  | &lt;p&gt;Measurements are of the garment laid flat, doubled where relevant. If you are between sizes, size up for a relaxed fit.&lt;/p&gt; | Optional. Somewhere to explain how to measure. |
+
+
+**Charts for one product**
+
+
+> Everything above applies to every product. To give one product its own chart, point its custom.size_chart metafield at a Size chart metaobject — one entry can be shared by every product cut to it — or at a page. For a single odd product, type its rows into custom.size_chart_rows instead. [How to set these up](https://moderngridstudio.github.io/Evoke/faq/products/index.html)
+
 
 ## Cart
 
