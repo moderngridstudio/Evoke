@@ -47,6 +47,8 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Predictive search results](#predictive-search-results)
 - [Product](#product)
 - [Product recommendations](#product-recommendations)
+- [Promo text](#promo-text)
+- [Promo text with icon](#promo-text-with-icon)
 - [Promotional popup](#promotional-popup)
 - [Quick look](#quick-look)
 - [Recently viewed](#recently-viewed)
@@ -59,8 +61,6 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Social feed](#social-feed)
 - [Social proof](#social-proof)
 - [Testimonials](#testimonials)
-- [Text adverts](#text-adverts)
-- [Text adverts with icon](#text-adverts-with-icon)
 - [Video](#video)
 - [Video popup](#video-popup)
 
@@ -675,9 +675,9 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Width | Choice | Content width · Full width | content_width | Width applies only when the color scheme is not set to Default. |
+| Width | Choice | Content width · Full width | content_width | Has an effect when a color scheme other than Default is selected. |
 | Space between blocks | Slider | 0–40 px | 16 |  |
-| Block alignment | Choice | Top · Center · Bottom | top | Only visible when blocks in a row are different heights. |
+| Block alignment | Choice | Top · Center · Bottom | top | Only noticeable when blocks in a row differ in height. |
 | Top spacing | Slider | 0–120 px | 64 |  |
 | Bottom spacing | Slider | 0–120 px | 64 |  |
 
@@ -755,8 +755,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Video | Video |  |  |  |
-| or embed video from URL | Text |  |  | Shows when no Shopify-hosted video is selected. Accepts YouTube and Vimeo. |
-| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+| or embed video from URL | Text |  |  | Appears if no Shopify-hosted video is chosen. Works with YouTube and Vimeo. |
+| Video alt text | Text |  |  | Describes the video for people who use screen readers. |
 | Heading font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h4 |  |
 
 
@@ -774,7 +774,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Button label | Text |  | Shop now |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 
 
 **Layout**
@@ -813,7 +813,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Button label | Text |  | Shop now |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 
 
 **Layout**
@@ -890,7 +890,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Button label | Text |  | Add to cart |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #FFFFFF |  |
 | Button text | Color |  | #111111 |  |
 
@@ -912,7 +912,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Button label | Text |  | Shop now |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 
 
 **Colors**
@@ -985,10 +985,8 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Show heading | On / off |  | true |  |
-| Heading text | Text |  | Collections |  |
-| Show subheading | On / off |  | false |  |
-| Subheading text | Text |  | Browse our curated collections |  |
+| Heading text | Text |  | Collections | Leave blank to hide the heading. |
+| Subheading text | Text |  |  | Leave blank to hide the subheading. |
 | Heading alignment | Choice | Left · Center · Right | left |  |
 | Title size | Choice | Extra small · Small · Medium · Large · Extra large | md |  |
 | Title weight | Choice | Regular · Medium · Semi-bold · Bold · Extra bold | 600 |  |
@@ -1047,7 +1045,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Collection | Collection |  |  | Until a collection is selected, this block shows a placeholder. |
-| Image | Image |  |  | 1600 x 1600px recommended. Optional. Overrides collection image. |
+| Image | Image |  |  | Optional. Replaces the collection image. 1600 x 1600px recommended. |
 | Custom title | Text |  |  | Leave blank to use the collection's title. |
 | Subheading | Text |  |  | Leave blank to use the collection's description. |
 | Button label | Text |  | Shop now |  |
@@ -1242,7 +1240,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Heading | Text |  | Contact us |  |
-| Description | Rich text |  | &lt;p&gt;Have a question, or want a product recommendation? Get in touch.&lt;/p&gt; |  |
+| Description | Rich text |  | &lt;p&gt;Got a question, or need help choosing a product? Get in touch.&lt;/p&gt; |  |
 | Alignment | text_alignment |  | center |  |
 
 
@@ -1485,7 +1483,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Text | Rich text |  | &lt;p&gt;Shout about how&lt;/p&gt; | One line of your headline. Stack multiple Static Text and Dynamic Text blocks to build multi-line headlines. |
+| Text | Rich text |  | &lt;p&gt;Tell everyone how&lt;/p&gt; | One line of your headline. Stack multiple Static Text and Dynamic Text blocks to build multi-line headlines. |
 
 
 **Style**
@@ -1506,7 +1504,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Rotating words | Text |  | amazing,fantastic,bestselling,jaw-dropping | Comma-separated list of words to cycle through. |
+| Rotating words | Text |  | amazing,remarkable,best-selling,stunning | Comma-separated list of words to cycle through. |
 | Text before words | Text |  |  | Optional. Displayed inline before the rotating word (e.g. "We are"). |
 | Text after words | Text |  |  | Optional. Displayed inline after the rotating word (e.g. "!"). |
 
@@ -1652,7 +1650,7 @@ _No section-level settings._
 | Button label | Text |  | Contact us |  |
 | Button link | Link |  |  |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text | Color |  | #FFFFFF |  |
 
@@ -1939,7 +1937,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | truck |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | truck |  |
 | Text | Text |  | Ships in 1–2 business days |  |
 
 
@@ -2475,7 +2473,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Heading | Text |  | Image with text |  |
-| Text | Rich text |  | &lt;p&gt;Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.&lt;/p&gt; |  |
+| Text | Rich text |  | &lt;p&gt;Combine large text with an image to spotlight a chosen product, collection, or blog post. Add details about availability or style, or even include a review.&lt;/p&gt; |  |
 | Alignment (desktop) | Choice | Left · Center · Right | left |  |
 | Alignment (mobile) | Choice | Left · Center · Right | left |  |
 
@@ -2505,7 +2503,7 @@ _No section-level settings._
 | Button link | Link |  |  |  |
 | Button label | Text |  | Shop now |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text | Color |  | #FFFFFF |  |
 
@@ -2559,14 +2557,14 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Link | Link |  |  | Optional. The link will be removed if a block with a link is added. |
+| Link | Link |  |  | Optional. The link is ignored once a block with a link is added. |
 
 
 **Animation**
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Animation style | Choice | Parallax · Sticky content · None | none | Parallax won't trigger when 'Section height' is set to 'Original'. |
+| Animation style | Choice | Parallax · Sticky content · None | none | Parallax doesn't work when Section height is set to Original. |
 | Parallax intensity | Choice | Subtle · Medium · Strong | medium | How far the image drifts as the section scrolls past. |
 
 
@@ -2612,7 +2610,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Text | Rich text |  | &lt;p&gt;Use this text to share information about your brand with your customers.&lt;/p&gt; |  |
+| Text | Rich text |  | &lt;p&gt;Use this text to tell your customers more about your brand and its story.&lt;/p&gt; |  |
 
 #### Button
 
@@ -2653,7 +2651,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Button style | Choice | Filled · Outlined · Underlined | underlined |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text | Color |  | #FFFFFF |  |
 
@@ -2716,8 +2714,8 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Video | Video |  |  |  |
-| or embed video from URL | Text |  |  | Shows when no Shopify-hosted video is selected. Accepts YouTube and Vimeo. |
-| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+| or embed video from URL | Text |  |  | Appears if no Shopify-hosted video is chosen. Works with YouTube and Vimeo. |
+| Video alt text | Text |  |  | Describes the video for people who use screen readers. |
 | Shape | Choice | Adapt to image · Circle · Square (1:1) · Portrait (3:4) · Wide (16:9) | wide |  |
 
 
@@ -3020,7 +3018,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Enable parallax effect | On / off |  | false | Scrolls the background image at a slower rate than the page to create a sense of depth. Only active on desktop screens and only when a minimum height above 'Original' is set. Automatically disabled for visitors who have enabled 'Reduce motion' in their OS settings. |
-| Enable content fade on scroll | On / off |  | false | Fades and lifts the breadcrumb and title as the visitor scrolls past the hero. Also respects 'Reduce motion' preferences. |
+| Fade content while scrolling | On / off |  | false | Fades and lifts the breadcrumb and title as the visitor scrolls past the hero. Also respects 'Reduce motion' preferences. |
 
 ---
 
@@ -3329,7 +3327,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
 | Text | Text |  |  |  |
 
 
@@ -3337,7 +3335,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
 | Text | Text |  |  |  |
 
 
@@ -3345,7 +3343,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
 | Text | Text |  |  |  |
 
 
@@ -3353,7 +3351,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
 | Text | Text |  |  |  |
 
 
@@ -3576,7 +3574,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | truck |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | truck |  |
 | Text | Text |  | Ships in 1–2 business days |  |
 
 
@@ -3674,6 +3672,127 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Enable Quick Look | On / off |  | true |  |
+
+---
+
+## Promo text
+
+*File: `sections/text-adverts.liquid`* — **Add via theme editor**
+
+### Settings
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show dividers | On / off |  | true |  |
+| Autoplay carousel | Choice | Disable · Only mobile · Only desktop (shows three blocks at once) · Both | disable | Slides one block at a time. Pauses on hover/touch. |
+| Text alignment | Choice | Left · Center · Right | center |  |
+
+
+**Buttons**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Button style | Choice | Filled · Outlined · Underlined | filled |  |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top spacing | Slider | 0–100 px | 32 |  |
+| Bottom spacing | Slider | 0–100 px | 24 |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+### Blocks
+
+#### Text
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Heading |  |
+| Text | Rich text |  | &lt;p&gt;Draw attention to key selling points.&lt;/p&gt; |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+| Button label | Text |  |  |  |
+| Button background | Color |  | #111111 |  |
+| Button text | Color |  | #FFFFFF |  |
+
+---
+
+## Promo text with icon
+
+*File: `sections/text-adverts-with-icon.liquid`* — **Add via theme editor**
+
+### Settings
+
+
+**Icon**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Icon size | Choice | Small · Medium · Large | medium |  |
+| Show dividers | On / off |  | true |  |
+| Autoplay carousel | Choice | Disable · Only mobile · Only desktop (shows three blocks at once) · Both | disable | Slides one block at a time. Pauses on hover/touch. |
+| Text alignment | Choice | Left · Center · Right | center |  |
+
+
+**Buttons**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Button style | Choice | Filled · Outlined · Underlined | filled |  |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Top spacing | Slider | 0–100 px | 32 |  |
+| Bottom spacing | Slider | 0–100 px | 24 |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+### Blocks
+
+#### Icon
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | recycle |  |
+
+
+**Custom icon**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Upload image | Image |  |  | Aspect ratio of 1:1 recommended. Overrides the icon above when set. |
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | Heading |  |
+| Text | Rich text |  | &lt;p&gt;Draw attention to key selling points.&lt;/p&gt; |  |
+
+
+**Link**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Link | Link |  |  |  |
+| Button label | Text |  |  |  |
+| Button background | Color |  | #111111 |  |
+| Button text | Color |  | #FFFFFF |  |
 
 ---
 
@@ -3843,7 +3962,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Text | Rich text |  | &lt;p&gt;Use this text block to show store announcements, advertise products and collections, or simply welcome visitors to your store.&lt;/p&gt; |  |
+| Text | Rich text |  | &lt;p&gt;Use this text block to share store news, promote products and collections, or simply greet the visitors to your store.&lt;/p&gt; |  |
 | Font size | Choice | Small · Medium · Large | medium |  |
 
 
@@ -3861,7 +3980,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Button link | Link |  |  |  |
-| Button label | Text |  |  | Required to show the button. |
+| Button label | Text |  |  | Leave empty to hide the button. |
 
 
 **Style**
@@ -3869,7 +3988,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text | Color |  | #FFFFFF |  |
 
@@ -3936,7 +4055,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | star |  |
+| Icon | Choice | Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | star |  |
 | Height (desktop) | Slider | 16–200 px | 24 |  |
 | Height (mobile) | Slider | 12–120 px | 20 |  |
 
@@ -3983,7 +4102,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
+| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Smiling speech bubble · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | none |  |
 | Heading | Text |  | FREE SHIPPING |  |
 | Text | Text |  | on orders over $150 |  |
 | Link | Link |  |  |  |
@@ -4242,13 +4361,13 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | First button link | Link |  |  |  |
-| First button label | Text |  | Shop now | The whole slide will act as a link if label is left empty. |
+| First button label | Text |  | Shop now | If the label is empty, the whole slide works as a link. |
 | Second button link | Link |  |  |  |
 | Second button label | Text |  |  |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Primary color | Color |  | #FFFFFF |  |
-| Secondary color | Color |  | #35382E | Only applies to text when Button style is 'Filled'. |
+| Secondary color | Color |  | #35382E | Used for text only when Button style is Filled. |
 
 
 **Desktop**
@@ -4389,7 +4508,7 @@ _No section-level settings._
 | Show star rating | On / off |  | true |  |
 | Rating value | Slider | 1–5 | 5 | This value is typed in, not read from a review app. Use the genuine average rating your store has earned. |
 | Star color | Color |  | #d4a13d |  |
-| Rating caption | Text |  | Trusted by Those Who Lounge in Luxury |  |
+| Rating caption | Text |  | Trusted by Those Who Relax in Style |  |
 
 
 **Content**
@@ -4397,7 +4516,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Heading | Text |  | What Our Customers Are Saying |  |
-| Description | Rich text |  | &lt;p&gt;Crafted with the finest materials and designed for the modern woman, our pieces promise unparalleled comfort without compromising on style.&lt;/p&gt; |  |
+| Description | Rich text |  | &lt;p&gt;Made from the finest fabrics and designed for today's woman, our pieces offer exceptional comfort without ever sacrificing style.&lt;/p&gt; |  |
 | Button label | Text |  |  |  |
 | Button link | Link |  |  |  |
 | Button style | Choice | Filled · Outlined · Underlined | filled |  |
@@ -4424,12 +4543,12 @@ _No section-level settings._
 |---|---|---|---|---|
 | Cover image | Image |  |  | Shown before the video plays. If left blank, a YouTube video will use its default thumbnail automatically. |
 | Shopify-hosted video | Video |  |  | Optional. Takes priority over the Video URL field below. |
-| Video URL | Text |  |  | Optional. Accepts a YouTube or Vimeo link. Shows when no Shopify-hosted video is selected. |
+| Video URL | Text |  |  | Optional. Works with a YouTube or Vimeo link. Appears if no Shopify-hosted video is chosen. |
 | Video/image ratio | Choice | Default (4:3, zoomed) · 1:1 (Square) · 4:3 (Landscape) · 3:4 (Portrait) · 16:9 (Landscape) · 9:16 (portrait / Reels) · Custom | default | Leave on Default to keep the current cropped/zoomed 4:3 frame. |
 | Custom ratio — width | Slider | 1–21 | 16 |  |
 | Custom ratio — height | Slider | 1–21 | 9 |  |
-| Quote | Rich text |  | &lt;p&gt;Witness the meticulous process where luxury fabric meets masterful tailoring, creating timeless loungewear pieces.&lt;/p&gt; |  |
-| Author | Text |  | @LuxeClothing |  |
+| Quote | Rich text |  | &lt;p&gt;Discover the careful process where fine fabric meets expert tailoring to create timeless loungewear pieces.&lt;/p&gt; |  |
+| Author | Text |  | @ClothingCo |  |
 | Show verified badge | On / off |  | false | Displays a checkmark next to the author name. Use it only for reviews you have confirmed came from a real customer. |
 | Date | Text |  | 2027-01-01 |  |
 
@@ -4494,127 +4613,6 @@ _No section-level settings._
 
 ---
 
-## Text adverts
-
-*File: `sections/text-adverts.liquid`* — **Add via theme editor**
-
-### Settings
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Show dividers | On / off |  | true |  |
-| Autoplay carousel | Choice | Disable · Only mobile · Only desktop (shows three blocks at once) · Both | disable | Slides one block at a time. Pauses on hover/touch. |
-| Text alignment | Choice | Left · Center · Right | center |  |
-
-
-**Buttons**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
-
-
-**Layout**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Top spacing | Slider | 0–100 px | 32 |  |
-| Bottom spacing | Slider | 0–100 px | 24 |  |
-| Color scheme | Color scheme |  | scheme-1 |  |
-
-### Blocks
-
-#### Text
-
-
-**Heading**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Heading | Text |  | Heading |  |
-| Text | Rich text |  | &lt;p&gt;Draw attention to key selling points.&lt;/p&gt; |  |
-
-
-**Link**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Link | Link |  |  |  |
-| Button label | Text |  |  |  |
-| Button background | Color |  | #111111 |  |
-| Button text | Color |  | #FFFFFF |  |
-
----
-
-## Text adverts with icon
-
-*File: `sections/text-adverts-with-icon.liquid`* — **Add via theme editor**
-
-### Settings
-
-
-**Icon**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Icon size | Choice | Small · Medium · Large | medium |  |
-| Show dividers | On / off |  | true |  |
-| Autoplay carousel | Choice | Disable · Only mobile · Only desktop (shows three blocks at once) · Both | disable | Slides one block at a time. Pauses on hover/touch. |
-| Text alignment | Choice | Left · Center · Right | center |  |
-
-
-**Buttons**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Button style | Choice | Filled · Outlined · Underlined | filled |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
-
-
-**Layout**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Top spacing | Slider | 0–100 px | 32 |  |
-| Bottom spacing | Slider | 0–100 px | 24 |  |
-| Color scheme | Color scheme |  | scheme-1 |  |
-
-### Blocks
-
-#### Icon
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Icon | Choice | None · Arrow circle · Book · Cake · Car · Chat · Chat bubble · Chat bubble with smile · Check circle · Clock · Cross · Crown · Cup · Customer service · Delivery · Eco · Email · Exchange · Fire · Flag · Gift · Globe · Handbag · Heart · Help circle · Home with smile · Info · Map pin · Measuring tape · Moon · Phone · Plus circle · Price tag · Question and answer · Quote · Recycle · Restaurant · Smiley · Sparks · Star · Store · Sun · Takeaway · Trophy · Truck · Umbrella · Wallet · Warning circle | recycle |  |
-
-
-**Custom icon**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Upload image | Image |  |  | Aspect ratio of 1:1 recommended. Overrides the icon above when set. |
-
-
-**Heading**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Heading | Text |  | Heading |  |
-| Text | Rich text |  | &lt;p&gt;Draw attention to key selling points.&lt;/p&gt; |  |
-
-
-**Link**
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Link | Link |  |  |  |
-| Button label | Text |  |  |  |
-| Button background | Color |  | #111111 |  |
-| Button text | Color |  | #FFFFFF |  |
-
----
-
 ## Video
 
 *File: `sections/video.liquid`* — **Add via theme editor**
@@ -4637,9 +4635,9 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Video | Video |  |  |  |
-| or embed video from URL | Video URL |  |  | Shows when no Shopify-hosted video is selected. Accepts YouTube and Vimeo. |
+| or embed video from URL | Video URL |  |  | Appears if no Shopify-hosted video is chosen. Works with YouTube and Vimeo. |
 | Cover image | Image |  |  | Shown before the video plays. If left blank, a YouTube video will use its default thumbnail automatically. |
-| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+| Video alt text | Text |  |  | Describes the video for people who use screen readers. |
 
 
 **Style**
@@ -4677,14 +4675,14 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Select | Video |  |  |  |
-| URL | Text |  |  | Accepts YouTube and Vimeo. Shows when no Shopify-hosted video is selected. |
+| URL | Text |  |  | Works with YouTube and Vimeo. Appears if no Shopify-hosted video is chosen. |
 
 
 > ⚠ If this URL isn't a valid YouTube or Vimeo link, a red warning banner will appear at the bottom of the preview while you're editing — fix it before publishing.
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Video alt text | Text |  |  | Describe the video for customers using screen readers. |
+| Video alt text | Text |  |  | Describes the video for people who use screen readers. |
 
 
 **Widget**
@@ -4713,7 +4711,7 @@ _No section-level settings._
 | Link | Link |  |  |  |
 | Button label | Text |  | Explore our collections |  |
 | End screen color scheme | Color scheme |  | scheme-2 |  |
-| Override button colors | On / off |  | false | Enable to reveal button color options. |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
 | Button background | Color |  | #111111 |  |
 | Button text color | Color |  | #FFFFFF |  |
 | Button border | Color |  | #111111 |  |
@@ -4724,11 +4722,11 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Show on... | Choice | All pages · Home page only | all |  |
-| Show on exit intent (desktop) | On / off |  | false | The popup will only show when the user moves the cursor away from the store. |
-| Show after | Slider | 0–30 s | 0 | Delay is disabled in theme editor for visibility. Does not apply to 'Exit intent'. |
+| Show on exit intent (desktop) | On / off |  | false | The popup only appears when the visitor moves the cursor away from the store. |
+| Show after | Slider | 0–30 s | 0 | No delay in the theme editor, so the popup stays visible. Not used with exit intent. |
 | Never show again | On / off |  | false | A shopper who closes the popup never sees it again on that device, so 'Frequency' is ignored. |
-| Frequency | Slider | 0–30 d | 0 | Number of days before a dismissed popup reappears. |
-| Disable for account holders | On / off |  | false | Will not be shown to customers who have created an account. |
+| Frequency | Slider | 0–30 d | 0 | Days to wait before a closed popup appears again. |
+| Hide from signed-in customers | On / off |  | false | Customers who are signed in to their account won't see the popup. |
 
 
 **Layout**
