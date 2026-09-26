@@ -45,7 +45,8 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Page width | Choice | Narrow · Wide | 90rem |  |
-| Page margin | Slider | 10–100 px | 20 |  |
+| Page margin on desktop | Slider | 10–100 px | 20 |  |
+| Page margin on mobile | Slider | 12–32 px | 20 |  |
 
 
 **Corners**
@@ -76,6 +77,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
+| Hover effect | Choice | None · Zoom image · Show second image | second_image | With Show second image, products that have one image zoom instead. |
 | Maximum title lines | Slider | 0–4 L | 0 | Trim card titles to this many lines and end them with an ellipsis. Set to 0 to let titles wrap freely. |
 | Show sale badges | On / off |  | true |  |
 | Show sold out badges | On / off |  | true |  |
@@ -91,6 +93,8 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Show stock level | On / off |  | true |  |
 | Low stock threshold | Slider | 1–20 | 5 | Show an 'Only X left' warning when inventory falls at or below this number. |
+| Show level bar in Quick Look | On / off |  | true | It starts full and drops to the stock that’s left. On product pages, the bar is set in the Stock level block. |
+| Bar reaches full at | Slider | 5–100 pc | 20 | Stock count that fills the bar completely. |
 
 ## Color swatches
 
@@ -254,6 +258,20 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Favicon | Image |  |  | Use a square .png or .ico image. |
 
+
+**Header icons**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Search | Choice | Magnifier · Text | magnifier |  |
+| Account | Choice | Person · Person in circle · Text | person |  |
+| Cart | Choice | Shopping bag · Basket · Shopping cart · Text | bag |  |
+| Line weight | Choice | Light · Regular · Bold | light | Applies to the menu, search, account and cart icons. |
+
+
+> Text labels show on larger screens. Phones always show icons, so the header never gets crowded.
+
+
 ## Animations
 
 | Setting | Type | Options | Default | Notes |
@@ -267,6 +285,14 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Animation style | Choice | None · Fade · Fade up · Fade and scale | fade_up | Content settles into place as it scrolls into view. |
 | Animation speed | Choice | Fast · Medium · Slow | medium |  |
+
+
+**Images and pages**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Fade in images as they load | On / off |  | true |  |
+| Fade between pages | On / off |  | true | Works in browsers that support page transitions. Other browsers change pages as usual. |
 
 ## Back to top
 

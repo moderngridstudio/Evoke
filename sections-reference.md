@@ -1100,7 +1100,6 @@ _No section-level settings._
 | Products per row (mobile) | Choice | 1 product · 2 products | 2 |  |
 | Grid spacing | Choice | Extra small · Small · Medium · Large · Extra large | 16 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | three-four |  |
-| Show secondary image on hover | On / off |  | true |  |
 | Show full title, including any : or - suffix | On / off |  | true | Uncheck to keep only one side of a title that contains a colon or a dash — useful when titles carry a colour or variant suffix. Which side is kept is set below. Title length is controlled separately, in Theme settings → Product cards → Maximum title lines. |
 | Structured title handling | Choice | Show part after special character · Show part before special character | after | Applies only when 'Show full product title' is unchecked. |
 | Show discount percentage | On / off |  | true | Shows savings in brackets, e.g. (20% OFF), next to discounted prices. |
@@ -3290,6 +3289,8 @@ _No section-level settings._
 |---|---|---|---|---|
 | Show level bar | On / off |  | true |  |
 | Bar reaches full at | Slider | 5–100 pc | 20 | Stock count that fills the bar completely. |
+| Animate the bar as the page loads | On / off |  | true | It starts full and drops to the stock that’s left. |
+| Pulse the status dot | On / off |  | true | Only while the item is in stock. Both effects are off when animations are turned off in theme settings. |
 
 
 **Layout**
@@ -4150,7 +4151,6 @@ _No section-level settings._
 | Products per row (desktop) | Slider | 2–5 | 4 |  |
 | Products per row (mobile) | Choice | 1 product · 2 products | 2 |  |
 | Product image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Portrait (3:4) · Tall (10:16) | three-four |  |
-| Show secondary image on hover | On / off |  | true |  |
 | Show discount percentage | On / off |  | true |  |
 | Show product vendor | On / off |  | false |  |
 | Product card alignment | Choice | Left · Center · Right | left |  |
@@ -4336,6 +4336,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Bottom content spacing | Slider | 0–160 px | 64 | Extra space between bottom-positioned content and the slide navigation. Increase if text overlaps the dots or arrows. |
+| Text animation | Choice | None · Fade · Fade up | rise | Plays each time a slide comes in. Off when animations are turned off in theme settings. |
 
 
 **Layout**
