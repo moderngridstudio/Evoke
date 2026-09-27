@@ -116,11 +116,14 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Button position | Choice | Corner · Bar — centered at bottom · Overlay — image center | bottom-bar | Where the Quick Look button appears on the product card. |
+| Button position | Choice | Corner · Bar — centered at bottom · Button — inset at bottom · Overlay — image center | bottom-bar | Where the Quick Look button appears on the product card. |
 | Corner | Choice | Bottom right · Bottom left · Top right · Top left | bottom-right |  |
+| Inset button size | Choice | Small · Medium · Large | medium |  |
+| Button background | Color |  |  | Leave blank to use the color scheme. |
+| Button text color | Color |  |  | Leave blank to use the color scheme. |
 | Button style | Choice | Icon + text · Icon only · Text only | icon_text |  |
 | Button label | Text |  | Quick Look | Applies when button style includes text. |
-| Show button on hover only | On / off |  | true | When off, the button is always visible without needing to hover the card. |
+| Show button on hover only | On / off |  | true | When off, the button is always visible without needing to hover the card. Tablets always show it. |
 | Button icon size | Slider | 12–24 px | 16 |  |
 | Button padding | Choice | Small — compact · Medium — default · Large — spacious | small |  |
 | Button corner radius | Slider | 0–100 px | 100 | 0 is square, 100 is a full pill. Applies on both desktop and mobile. |
@@ -130,7 +133,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Button position (mobile) | Choice | Corner · Bar — centered at bottom · Overlay — image center | corner | Overrides button position on screens below 750px. |
+| Button position (mobile) | Choice | Corner · Bar — centered at bottom · Button — inset at bottom · Overlay — image center | corner | Overrides button position on screens below 750px. |
 | Corner (mobile) | Choice | Bottom right · Bottom left · Top right · Top left | bottom-right |  |
 | Button style (mobile) | Choice | Icon + text · Icon only · Text only | icon | Overrides button style on screens below 750px. Icon only is recommended for compact cards. |
 | Show button on hover only (mobile) | On / off |  | false | Mobile devices have no hover state, so leaving this off keeps the button always visible on touch screens. |
