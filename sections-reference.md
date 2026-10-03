@@ -678,6 +678,7 @@ _No section-level settings._
 | Width | Choice | Content width · Full width | content_width | Has an effect when a color scheme other than Default is selected. |
 | Space between blocks | Slider | 0–40 px | 16 |  |
 | Block alignment | Choice | Top · Center · Bottom | top | Only noticeable when blocks in a row differ in height. |
+| Phone layout | Choice | Stacked · Two per row · Swipe row | stack | Two per row and Swipe row give every tile the same shape, and text blocks stay full width. Desktop is not affected. |
 | Top spacing | Slider | 0–120 px | 64 |  |
 | Bottom spacing | Slider | 0–120 px | 64 |  |
 
@@ -4029,6 +4030,8 @@ _No section-level settings._
 |---|---|---|---|---|
 | Animation direction | Choice | Left · Right | left |  |
 | Speed | Slider | 1–10 | 5 |  |
+| Pause on hover | On / off |  | true |  |
+| Speed up while scrolling | On / off |  | true | The strip moves faster while the page scrolls, then settles back to its own speed. |
 
 
 **Layout**
@@ -4076,6 +4079,7 @@ _No section-level settings._
 | Speed | Slider | 1–10 | 5 |  |
 | Animation direction | Choice | Left · Right | left |  |
 | Pause on hover | On / off |  | true |  |
+| Speed up while scrolling | On / off |  | true | The strip moves faster while the page scrolls, then settles back to its own speed. |
 
 
 **Style**

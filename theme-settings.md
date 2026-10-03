@@ -66,6 +66,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Button letter case | Choice | Original · Uppercase · Lowercase | none |  |
 | Button text size | Slider | 12–20 px | 14 |  |
 | Button border width | Slider | 0–3 px | 1 |  |
+| Button hover effect | Choice | Shade · Lift · None | shade | Applies to solid and outline buttons across the theme. |
 
 ## Colors
 
@@ -77,7 +78,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Hover effect | Choice | None · Zoom image · Show second image | second_image | With Show second image, products that have one image zoom instead. |
+| Hover effect | Choice | None · Zoom image · Show second image · Wipe to second image | second_image | With Show second image or Wipe to second image, products that have one image zoom instead. |
 | Maximum title lines | Slider | 0–4 L | 0 | Trim card titles to this many lines and end them with an ellipsis. Set to 0 to let titles wrap freely. |
 | Show sale badges | On / off |  | true |  |
 | Show sold out badges | On / off |  | true |  |
@@ -123,7 +124,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Button text color | Color |  |  | Leave blank to use the color scheme. |
 | Button style | Choice | Icon + text · Icon only · Text only | icon_text |  |
 | Button label | Text |  | Quick Look | Applies when button style includes text. |
-| Show button on hover only | On / off |  | true | When off, the button is always visible without needing to hover the card. Tablets always show it. |
+| Show button on hover only | On / off |  | true | When off, the button is always visible without needing to hover the card. Phones and tablets always show it. |
 | Button icon size | Slider | 12–24 px | 16 |  |
 | Button padding | Choice | Small — compact · Medium — default · Large — spacious | small |  |
 | Button corner radius | Slider | 0–100 px | 100 | 0 is square, 100 is a full pill. Applies on both desktop and mobile. |
@@ -136,7 +137,6 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Button position (mobile) | Choice | Corner · Bar — centered at bottom · Button — inset at bottom · Overlay — image center | corner | Overrides button position on screens below 750px. |
 | Corner (mobile) | Choice | Bottom right · Bottom left · Top right · Top left | bottom-right |  |
 | Button style (mobile) | Choice | Icon + text · Icon only · Text only | icon | Overrides button style on screens below 750px. Icon only is recommended for compact cards. |
-| Show button on hover only (mobile) | On / off |  | false | Mobile devices have no hover state, so leaving this off keeps the button always visible on touch screens. |
 
 
 **Modal**
@@ -222,6 +222,12 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 > Everything above applies to every product. To give one product its own chart, point its custom.size_chart metafield at a Size chart metaobject — one entry can be shared by every product cut to it — or at a page. For a single odd product, type its rows into custom.size_chart_rows instead. [How to set these up](https://moderngridstudio.github.io/Evoke/product-content/a-different-size-chart-per-product/index.html)
 
 
+**Choosing a size**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Ask shoppers to choose a size | On / off |  | false | Product pages, quick look and featured product open with no size picked, and the add to cart button asks for one. Uses the size option name above. A link to one variant still opens with its size picked. |
+
 ## Cart
 
 | Setting | Type | Options | Default | Notes |
@@ -288,6 +294,8 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Animation style | Choice | None · Fade · Fade up · Fade and scale | fade_up | Content settles into place as it scrolls into view. |
 | Animation speed | Choice | Fast · Medium · Slow | medium |  |
+| Image reveal | Choice | None · Zoom out · Curtain | zoom | Images in product cards and image sections settle into place as they appear. |
+| Headings rise into place | On / off |  | true | Section headings slide up from behind a line as they appear. |
 
 
 **Images and pages**
@@ -295,7 +303,8 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Fade in images as they load | On / off |  | true |  |
-| Fade between pages | On / off |  | true | Works in browsers that support page transitions. Other browsers change pages as usual. |
+| Animate between pages | On / off |  | true | Works in browsers that support page transitions. Other browsers change pages as usual. |
+| Page transition | Choice | Fade · Rise · Wipe | fade |  |
 
 ## Back to top
 
