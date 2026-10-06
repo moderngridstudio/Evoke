@@ -42,7 +42,7 @@ Highlights:
 Evoke supports these without any app:
 
 - Customer accounts via the built-in `shopify-account` component
-- Faceted filtering and sorting on collection and search pages
+- Faceted filtering and sorting on collection and search pages, including swatch and image filters
 - Predictive search
 - Related **and** complementary product recommendations
 - Local pickup availability

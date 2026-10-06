@@ -1133,6 +1133,7 @@ _No section-level settings._
 | Enable filtering | On / off |  | true |  |
 | Enable sorting | On / off |  | true |  |
 | Desktop filter layout | Choice | Top bar / Mobile style · Sidebar left | topbar |  |
+| Swatch filter layout | Choice | List · Grid | list | For filters set to show swatches or images in the Search &amp; Discovery app. Both layouts show the name and product count of each value. |
 
 
 **Layout Switcher**
@@ -3213,6 +3214,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Show breadcrumbs | On / off |  | true |  |
 | Show discount percentage | On / off |  | true |  |
+| Collapsible tab style | Choice | Collapsible rows · Tabs | collapsible | With Tabs, Description, Collapsible tab and Collapsible tab + image blocks placed one after another form one set of tabs. |
 
 
 **Purchase**
@@ -4237,6 +4239,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Enable filtering | On / off |  | true | Requires filters to be configured for search results via the Search and Discovery app. |
 | Desktop filter layout | Choice | Top bar / Mobile style · Sidebar left | topbar |  |
+| Swatch filter layout | Choice | List · Grid | list | For filters set to show swatches or images in the Search &amp; Discovery app. Both layouts show the name and product count of each value. |
 
 
 **Sorting**

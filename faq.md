@@ -48,6 +48,16 @@ Set swatch images or colors per option value in Shopify admin — those always t
 
 If you're relying on the theme to draw swatches, use **Product photo** rather than a color chip. A color named "Blue" on a teal garment, or a name like "Ocean Drift" that isn't a CSS color, can't be drawn accurately as a chip.
 
+### Can product cards show color swatches?
+
+Yes. **Theme settings → Product cards → Show color swatches** (on by default) adds a row of swatches under the price for products in two colors or more. Choosing one shows that color's image on the card and opens the product in that color. **Maximum swatches** sets how many show; the rest appear as a count, such as +3.
+
+Cards use the same color option as the product page: one with swatches set in Shopify admin, or one named Color, Colour, Finish or Shade. They also follow **Theme settings → Color swatches → Swatch style**.
+
+### How do I show product information in tabs?
+
+In the product section, set **Collapsible tab style** to **Tabs**. **Description**, **Collapsible tab** and **Collapsible tab + image** blocks placed one after another then show as one set of tabs, with the first tab open. Any other block between them starts a new set, and in the two-column layout a set stays within one column.
+
 ### Complementary products aren't appearing
 
 Complementary products are configured in Shopify's **Search & Discovery** app. Related products are chosen automatically from order history and product data, and need no setup — but new stores often have no data yet.
@@ -83,6 +93,12 @@ Tags aren't translated, so a custom badge reads the same in every language. The 
 Filters are configured in Shopify's **Search & Discovery** app, not in the theme. Once set up there, enable **Enable filtering** on the collection section.
 
 For filters on the search results page, they must be configured for search results specifically in the same app.
+
+### How do I show color swatches in the filters?
+
+Swatches are switched on per filter in the **Search & Discovery** app. Add or edit a filter based on a category metafield such as **Color**, choose **Manage values**, and tick **Include swatch**. A filter based on your own metafield offers **Include visual**, with a swatch or an image.
+
+Evoke then shows each value as a swatch, with its name and the number of products. **Swatch filter layout** on the collection and search sections puts them in a list or a grid. Filters left as text keep their checkboxes.
 
 ### Long product titles are being cut in half
 

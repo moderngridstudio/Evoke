@@ -114,6 +114,7 @@ Two things to know:
 
 - The **buy buttons** block carries the form that the variant picker and quantity selector submit to. Removing it breaks both.
 - **Product information layout** switches between one and two columns. In two-column mode each block gains a **Block position** choice so you can decide which column it sits in. Mobile is always single column.
+- **Collapsible tab style** shows the description and collapsible tabs as rows that open and close, or as tabs. Tab blocks placed one after another form one set of tabs.
 
 ### Quick Look
 

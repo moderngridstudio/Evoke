@@ -86,6 +86,8 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | "New" badge tag | Text |  | new | Products carrying this tag show a "New" badge on product cards, on the product page and in Quick look. Upper or lower case makes no difference. Leave empty to turn the badge off. |
 | Custom badge tag prefix | Text |  | badge: | With badge:, a product tagged badge:Best seller shows a "Best seller" badge (up to two per product) on product cards, the product page and Quick look. Tags are not translated, so the badge reads the same in every language. Leave empty to turn custom badges off. |
 | Show product ratings when available | On / off |  | true | Uses the standard product review metafields provided by compatible review apps. |
+| Show color swatches | On / off |  | true | For products with a color option: one with swatches set in your admin, or one named Color, Colour, Finish or Shade. Choosing a color shows its image on the card. |
+| Maximum swatches | Slider | 2–10 | 5 | Further colors show as a count, such as +3. |
 
 ## Inventory
 
@@ -102,7 +104,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 ## Color swatches
 
 
-> Applies to color options on the product page and in Quick Look. Swatch images and colors set per option value in your admin always take priority over both choices below.
+> Applies to color options on product cards, on the product page and in Quick Look. Swatch images and colors set per option value in your admin always take priority over both choices below.
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
