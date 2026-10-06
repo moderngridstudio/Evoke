@@ -14,6 +14,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 - [Size guide](#size-guide)
 - [Cart](#cart)
 - [Social media](#social-media)
+- [Search engines](#search-engines)
 - [Icons](#icons)
 - [Animations](#animations)
 - [Back to top](#back-to-top)
@@ -260,6 +261,15 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Threads URL | Text |  |  |  |
 | Snapchat URL | Text |  |  |  |
 | WhatsApp URL | Text |  |  | Use a wa.me link, for example https://wa.me/15551234567 |
+
+## Search engines
+
+
+> Set your home page title and meta description in your Shopify admin under Online Store > Preferences.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Add structured data | On / off |  | true | Helps search engines read your store name, logo, blog posts and breadcrumbs. Turn off if an SEO app adds its own. Product data is always included. |
 
 ## Icons
 

@@ -251,6 +251,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 | Heading | Text |  |  |  |
 | Description | Rich text |  |  |  |
 | Heading alignment | Choice | Left · Center · Right | center |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 40 |  |
 
 
@@ -489,6 +490,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 |---|---|---|---|---|
 | Top padding | Slider | 0–100 px | 36 |  |
 | Bottom padding | Slider | 0–100 px | 36 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 36 |  |
 
 
@@ -990,7 +992,7 @@ _No section-level settings._
 | Subheading text | Text |  |  | Leave blank to hide the subheading. |
 | Heading alignment | Choice | Left · Center · Right | left |  |
 | Title size | Choice | Extra small · Small · Medium · Large · Extra large | md |  |
-| Title weight | Choice | Regular · Medium · Semi-bold · Bold · Extra bold | 600 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 48 |  |
 
 
@@ -1172,6 +1174,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading size | Choice | Small · Medium · Large | medium |  |
 | Heading alignment | Choice | Left · Center · Right | center |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 32 |  |
 | Show 'See more' link | On / off |  | true |  |
 
@@ -1251,6 +1254,15 @@ _No section-level settings._
 | Content width | Choice | Narrow · Medium · Wide | medium |  |
 
 
+**Contact details**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Position | Choice | Off · Left of the form · Right of the form | right | Add Contact detail blocks to fill the column. |
+| Position on phones | Choice | Above the form · Below the form | above |  |
+| Show icons | On / off |  | true |  |
+
+
 **Spacing**
 
 | Setting | Type | Options | Default | Notes |
@@ -1267,60 +1279,60 @@ _No section-level settings._
 
 ### Blocks
 
-#### Name field
+#### Name
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Required | On / off |  | true |  |
-| Input width | Choice | Partial · Full | partial |  |
+| Width | Choice | Half · Full | partial |  |
 
-#### Email field
+#### Email
+
+
+> The form always has an email field: Shopify needs one to send the message.
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Required | On / off |  | true |  |
-| Input width | Choice | Partial · Full | partial |  |
+| Width | Choice | Half · Full | partial |  |
 
-#### Telephone field
+#### Phone
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Required | On / off |  | false |  |
-| Input width | Choice | Partial · Full | full |  |
+| Width | Choice | Half · Full | full |  |
 
-#### Text field
+#### Message
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Required | On / off |  | true |  |
-| Input width | Choice | Partial · Full | full |  |
+| Width | Choice | Half · Full | full |  |
 
-#### Custom field
+#### Form field
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
+| Field type | Choice | Short answer · Long answer · Number · Date · Dropdown · Choice buttons · Checkbox | text |  |
 | Label | Text |  | Order number |  |
+| Options | Text (multi-line) |  | Order help Sizing and fit Returns Something else | One option per line. |
+| Field placeholder | Text |  |  |  |
+| Hint text | Text |  |  |  |
 | Required | On / off |  | false |  |
-| Input width | Choice | Partial · Full | full |  |
+| Width | Choice | Half · Full | full |  |
 
-#### Checkbox
+#### Contact detail
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Label | Text |  | Checkbox |  |
-| Hint text | Text |  |  | Optional supporting text shown below the checkbox. |
-| Required | On / off |  | false |  |
-| Input width | Choice | Partial · Full | full |  |
-
-#### Dropdown
-
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Label | Text |  | Choose an option |  |
-| Hint text | Text |  |  | Optional supporting text shown below the dropdown. |
-| Options | Text |  | Yes, No | Comma-separated list of options, e.g. Yes, No, Maybe |
-| Required | On / off |  | false |  |
-| Input width | Choice | Partial · Full | full |  |
+| Type | Choice | Email address · Phone number · Address · Opening hours · Text · Social links | email |  |
+| Heading | Text |  |  |  |
+| Email address | Text |  | hello@yourstore.com |  |
+| Phone number | Text |  | +1 212 555 0136 |  |
+| Address | Text (multi-line) |  | 123 Example Street City, Postcode |  |
+| Show a directions link | On / off |  | true | Opens Google Maps. |
+| Opening hours | Text (multi-line) |  | Mon–Fri: 9am–6pm Sat: 10am–4pm Sun: Closed | One line each, for example Mon–Fri: 9am–6pm |
+| Text | Rich text |  |  | Shown under the detail. For the Text type, this is the content. |
 
 ---
 
@@ -1623,7 +1635,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Enable FAQ structured data | On / off |  | true | Adds schema.org markup so search engines can display your questions directly in search results. |
+| Enable FAQ structured data | On / off |  | true | Adds question-and-answer data for search engines. Google no longer shows these answers in its results. |
 
 
 **Section padding**
@@ -1676,6 +1688,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Top padding | Slider | 0–100 px | 36 |  |
 | Bottom padding | Slider | 0–100 px | 36 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 36 |  |
 
 
@@ -1735,6 +1748,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Top padding | Slider | 0–100 px | 36 |  |
 | Bottom padding | Slider | 0–100 px | 36 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 36 | Controls the gap between the heading and the collection tab labels. |
 
 
@@ -1809,6 +1823,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Media layout | Choice | Grid · Thumbnails · Paginated | thumbnails | Grid shows every image at once in two columns. Thumbnails shows one image with a strip to pick from. Paginated shows one image at a time with next and previous arrows. |
 | Thumbnail position | Choice | Left (vertical) · Bottom (horizontal) | left |  |
+| First image | Choice | Same size as the others · Full width to fill a gap · Always full width | odd | An odd number of images leaves a gap at the end of the grid; a full-width first image fills it. Always full width also widens the last image when it would sit alone. When a color is picked, only its images count. |
 
 
 **Mobile**
@@ -2089,6 +2104,16 @@ _No section-level settings._
 | Bottom padding | Slider | 0–80 px | 20 |  |
 
 
+**Large wordmark**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show large wordmark | On / off |  | false | Your store name in large type across the full width, at the very bottom of the footer. |
+| Text | Text |  |  | Leave blank to use the store name. It's sized to fill the width, so a shorter name shows larger. |
+| Image | Image |  |  | Shows a logo image instead of the text, at full width. A PNG or SVG with a transparent background works best. |
+| Style | Choice | Solid · Faint · Outline | solid | Outline applies to text only. |
+
+
 **Spacing**
 
 | Setting | Type | Options | Default | Notes |
@@ -2180,6 +2205,7 @@ _No section-level settings._
 | Heading | Text |  | Gallery |  |
 | Description | Rich text |  |  |  |
 | Heading alignment | Choice | Left · Center · Right | left |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 40 |  |
 
 
@@ -2636,6 +2662,7 @@ _No section-level settings._
 | Heading | Text |  | Why shop with us |  |
 | Description | Rich text |  | &lt;p&gt;Set out the promises that matter most before a customer has to go looking for them.&lt;/p&gt; |  |
 | Heading alignment | Choice | Left · Center · Right | center |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 40 |  |
 
 
@@ -2793,6 +2820,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Top padding | Slider | 0–100 px | 40 |  |
 | Bottom padding | Slider | 0–100 px | 40 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 28 |  |
 
 ### Blocks
@@ -3127,6 +3155,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Media layout | Choice | Grid · Thumbnails · Paginated | thumbnails | Grid shows every image at once in two columns. Thumbnails shows one image with a strip to pick from. Paginated shows one image at a time with next and previous arrows. |
 | Thumbnail position | Choice | Left (vertical) · Bottom (horizontal) | left |  |
+| First image | Choice | Same size as the others · Full width to fill a gap · Always full width | odd | An odd number of images leaves a gap at the end of the grid; a full-width first image fills it. Always full width also widens the last image when it would sit alone. When a color is picked, only its images count. |
 
 
 **Mobile**
@@ -3645,6 +3674,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | You may also like |  |
 | Heading alignment | Choice | Left · Center · Right | left |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 44 |  |
 
 
@@ -3891,6 +3921,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | Recently viewed |  |
 | Heading alignment | Choice | Left · Center · Right | left |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–60 px | 44 |  |
 
 
@@ -3952,6 +3983,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | Heading |  |
 | Font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h3 |  |
+| Show line under heading | On / off |  | false |  |
 
 
 **Layout**
@@ -4211,6 +4243,7 @@ _No section-level settings._
 | Look image ratio | Choice | Adapt to image · Square (1:1) · Portrait (4:5) · Landscape (4:3) · Wide (16:9) | landscape | A fixed ratio keeps the section from resizing as customers move between looks. |
 | Top padding | Slider | 0–100 px | 36 |  |
 | Bottom padding | Slider | 0–100 px | 36 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 36 |  |
 
 
@@ -4601,6 +4634,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Top padding | Slider | 0–100 px | 48 |  |
 | Bottom padding | Slider | 0–100 px | 48 |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 36 |  |
 
 ### Blocks
@@ -4632,6 +4666,7 @@ _No section-level settings._
 | Heading | Text |  |  |  |
 | Description | Rich text |  |  |  |
 | Heading alignment | Choice | Left · Center · Right | left |  |
+| Show line under heading | On / off |  | true |  |
 | Spacing below heading | Slider | 0–80 px | 40 |  |
 
 
