@@ -138,8 +138,9 @@ There's also a **Mega menu — Collection** block, which shows live products fro
 **Theme settings → Cart**
 
 - **Cart drawer** — the slide-out cart. Configure it by selecting the cart drawer in the editor.
+- **Gift wrap product** — choose a product such as "Gift wrap" to offer it as a checkbox in the cart drawer and on the cart page.
 - **Free shipping progress bar** — set your threshold. This displays the threshold only; it does **not** create the discount. Configure the actual free shipping rate in **Settings → Shipping**.
-- **Order notes** and **gift messages** are toggled on the cart page section.
+- **Order note** — **Show order note** on the cart drawer and **Enable order note** on the cart page section; both edit the same note. **Gift messages** are on the cart page section.
 
 ---
 

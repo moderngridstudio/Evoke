@@ -9,11 +9,13 @@ fs.mkdirSync(OUT, { recursive: true });
 
 const raw = fs.readFileSync('locales/en.default.schema.json', 'utf8');
 const locale = JSON.parse(raw.replace(/^\s*\/\*[\s\S]*?\*\/\s*/, ''));
+/* Links to /admin pages only work inside the theme editor, so the docs keep
+   just their text. */
 const t = (v) => {
   if (typeof v !== 'string') return v;
   if (!v.startsWith('t:')) return v;
   const r = v.slice(2).split('.').reduce((o, k) => (o == null ? undefined : o[k]), locale);
-  return typeof r === 'string' ? r : v.slice(2);
+  return typeof r === 'string' ? r.replace(/\[([^\]]+)\]\(\/admin[^)]*\)/g, '$1') : v.slice(2);
 };
 /* Pipes break table cells; angle brackets in default values (rich text ships
    as "<p>…</p>") would otherwise be parsed as markup by the Markdown renderer. */
@@ -33,7 +35,7 @@ const TYPE_LABEL = {
   link_list: 'Menu', color: 'Color', color_background: 'Color', color_scheme: 'Color scheme',
   color_scheme_group: 'Color schemes', font_picker: 'Font', range: 'Slider',
   checkbox: 'On / off', select: 'Choice', radio: 'Choice', number: 'Number',
-  article: 'Article', inline_richtext: 'Text',
+  article: 'Article', inline_richtext: 'Text', text_alignment: 'Choice',
 };
 
 function settingsTable(settings) {
@@ -48,6 +50,7 @@ function settingsTable(settings) {
     const type = TYPE_LABEL[s.type] || s.type;
     let opts = '';
     if (Array.isArray(s.options)) opts = s.options.map((o) => t(o.label)).filter(Boolean).join(' · ');
+    if (s.type === 'text_alignment') opts = 'Left · Center · Right';
     if (s.type === 'range') opts = `${s.min}–${s.max}${s.unit ? ' ' + t(s.unit) : ''}`;
     const info = s.info ? t(s.info) : '';
     const dflt = s.default !== undefined && typeof s.default !== 'object' ? String(s.default) : '';

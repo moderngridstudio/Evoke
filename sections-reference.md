@@ -596,6 +596,14 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 |---|---|---|---|---|
 | Color scheme | Color scheme |  | scheme-1 |  |
 
+
+**Order summary**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show order note | On / off |  | true | Customers can leave instructions for the order. The field opens from "Order note" above the subtotal. |
+| Show 'taxes and shipping calculated at checkout' note | On / off |  | true | When your prices include tax, the "Taxes included" line always shows. |
+
 ---
 
 ## Cart page
@@ -633,7 +641,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Show 'taxes and shipping calculated at checkout' note | On / off |  | true |  |
+| Show 'taxes and shipping calculated at checkout' note | On / off |  | true | When your prices include tax, the "Taxes included" line always shows. |
 | Require agreement to terms before checkout | On / off |  | false |  |
 | Terms and conditions link | Link |  |  |  |
 
@@ -1244,7 +1252,7 @@ _No section-level settings._
 |---|---|---|---|---|
 | Heading | Text |  | Contact us |  |
 | Description | Rich text |  | &lt;p&gt;Got a question, or need help choosing a product? Get in touch.&lt;/p&gt; |  |
-| Alignment | text_alignment |  | center |  |
+| Alignment | Choice | Left · Center · Right | center |  |
 
 
 **Layout**
@@ -2400,6 +2408,17 @@ _No section-level settings._
 | Search results include | Choice | Products, pages and articles · Products and articles · Products and pages · Products only | product,page,article | Applies to the results page. The suggestions panel always searches everything, so narrowing this makes the results page show less than the panel offered. |
 | Show results as you type | On / off |  | true | Suggests search terms, products, collections, pages and articles in the search panel. Turn off to use a plain search field that submits to the search page. |
 
+
+**Customer account**
+
+
+> The account icon shows in the header on phones and larger screens. Show or hide sign-in links in customer account settings.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Account menu | Menu |  | customer-account-main-menu | Links in the panel that opens from the account icon, such as Orders and Profile. Keep the default menu so they match the account pages. |
+| Show in mobile drawer | On / off |  | true | Also shows Log in, or the customer's name, at the bottom of the phone menu. |
+
 ### Blocks
 
 #### Mega menu
@@ -3057,15 +3076,26 @@ _No section-level settings._
 ### Settings
 
 
-**Background**
+**Layout**
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Card color scheme | Color scheme |  | scheme-1 |  |
-| Background image | Image |  |  |  |
-| Background image — mobile | Image |  |  | Falls back to the desktop image. |
+| Layout | Choice | Card on a background · Wordmark · Image beside the text · Image behind the text | card | Wordmark needs no image: your store name fills the width at the bottom. |
+| Text alignment | Choice | Left · Center · Right | left |  |
+| Color scheme | Color scheme |  | scheme-1 | With Card on a background, this colors the card. |
+| Image | Image |  |  |  |
+| Image on phones | Image |  |  | Falls back to the image above. |
+| Image position | Choice | Left · Right | left |  |
 | Background color | Color |  | #444444 | Used when no background image is set, and behind it while it loads. |
 | Image darkening | Slider | 0–90 % | 35 |  |
+
+
+**Wordmark**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Wordmark text | Text |  |  | Leave blank to use the store name. |
+| Style | Choice | Solid · Faint · Outline | solid |  |
 
 
 **Content**
@@ -3077,7 +3107,16 @@ _No section-level settings._
 | Heading | Text |  | Opening soon |  |
 
 
-> The message below the heading comes from Shopify admin → Online Store → Preferences → Password page.
+> The message under the heading is set in your Shopify admin under Online Store > Preferences > Password protection.
+
+
+**Countdown**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show a countdown to opening | On / off |  | false |  |
+| Opening date | Text |  |  | For example 2026-12-01. |
+| Opening time | Text |  | 09:00 | 24-hour time in your store's time zone, for example 09:00. The countdown disappears once you open. |
 
 
 **Email signup**
@@ -3102,7 +3141,7 @@ _No section-level settings._
 
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
-| Footer link label | Text |  | Enter store using password |  |
+| Password link label | Text |  | Enter store using password |  |
 | Field placeholder | Text |  | Enter password |  |
 | Store owner text | Text |  | Are you the store owner? |  |
 | Store owner link label | Text |  | Log in here |  |

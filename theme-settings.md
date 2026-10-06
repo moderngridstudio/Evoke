@@ -84,6 +84,7 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 | Show sale badges | On / off |  | true |  |
 | Show sold out badges | On / off |  | true |  |
 | "New" badge tag | Text |  | new | Products carrying this tag show a "New" badge on product cards, on the product page and in Quick look. Upper or lower case makes no difference. Leave empty to turn the badge off. |
+| Custom badge tag prefix | Text |  | badge: | With badge:, a product tagged badge:Best seller shows a "Best seller" badge (up to two per product) on product cards, the product page and Quick look. Tags are not translated, so the badge reads the same in every language. Leave empty to turn custom badges off. |
 | Show product ratings when available | On / off |  | true | Uses the standard product review metafields provided by compatible review apps. |
 
 ## Inventory
@@ -231,11 +232,6 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 
 ## Cart
 
-| Setting | Type | Options | Default | Notes |
-|---|---|---|---|---|
-| Enable cart notes | On / off |  | false |  |
-| Show shipping and tax notice | On / off |  | true |  |
-
 
 **Free shipping bar**
 
@@ -246,6 +242,16 @@ Settings that apply across the whole store. Find them in *Customize → Theme se
 |---|---|---|---|---|
 | Enable free shipping progress bar | On / off |  | false |  |
 | Free shipping threshold | Slider | 0–500 $ | 150 | Set to 0 to hide. Does not automatically apply a shipping discount — configure that separately in Settings &gt; Shipping. |
+
+
+**Gift wrapping**
+
+
+> Create a product for gift wrapping (for example "Gift wrap", $5) and choose it here. The cart drawer and cart page then offer it as a checkbox, and it shows in the cart with its price.
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Gift wrap product | Product |  |  | The checkbox uses the product's title and its first available variant. Leave empty to hide it. |
 
 ## Social media
 

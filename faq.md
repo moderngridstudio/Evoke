@@ -68,6 +68,12 @@ A product with FAQs of its own shows only those, whether or not **Show FAQ secti
 
 FAQs appear inside **Quick Look**, not on the product page.
 
+### How do I add my own badges, like "Best seller"?
+
+Tag the product `badge:Best seller`. The text after the prefix becomes a badge on product cards, the product page and Quick look, up to two per product. Change or clear the prefix in **Theme settings → Product cards → Custom badge tag prefix**.
+
+Tags aren't translated, so a custom badge reads the same in every language. The **"New" badge tag** setting works the same way, but its badge text is translated.
+
 ---
 
 ## Collections and search
@@ -90,9 +96,15 @@ Turn on **Show full product title**. When it's off, titles containing a colon or
 
 It's a progress indicator only. Set the actual free shipping rate in **Settings → Shipping**. The threshold in theme settings just tells the customer what to aim for — keep the two matched.
 
+### How do I offer paid gift wrapping?
+
+Create a product for it, for example **Gift wrap** at $5, and choose it in **Theme settings → Cart → Gift wrap product**. The cart drawer and the cart page then show a checkbox with the product's title and price: ticking it adds the product to the cart, unticking removes it, and it shows in the cart like any other line.
+
+To keep the product out of collections, don't add it to any. To hide it from search results too, give it the `seo.hidden` metafield with the value `1`.
+
 ### Can customers add a note or gift message?
 
-Yes, both. Toggle **Enable order note** and **Enable gift message** on the cart page section.
+Yes. The cart drawer has **Show order note** (on by default), and the cart page section has **Enable order note** and **Enable gift message**. The drawer and the cart page edit the same note, and it goes through to checkout from either.
 
 ---
 
