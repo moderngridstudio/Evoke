@@ -41,7 +41,7 @@
     <h1 class="doc__title">Layout and display</h1>
     <nav class="toc" aria-label="On this page">
          <p class="toc__title">On this page</p>
-         <a class="toc__link" href="#my-section-title-is-hidden-behind-the-header">My section title is hidden behind the header</a><a class="toc__link" href="#parallax-isnt-working">Parallax isn't working</a><a class="toc__link" href="#animations-arent-playing-for-me">Animations aren't playing for me</a><a class="toc__link" href="#fit-study-doesnt-stay-on-screen-while-i-scroll">Fit study doesn't stay on screen while I scroll</a><a class="toc__link" href="#the-countdown-ends-at-a-different-time-for-different-customers">The countdown ends at a different time for different customers</a>
+         <a class="toc__link" href="#my-section-title-is-hidden-behind-the-header">My section title is hidden behind the header</a><a class="toc__link" href="#parallax-isnt-working">Parallax isn't working</a><a class="toc__link" href="#animations-arent-playing-for-me">Animations aren't playing for me</a><a class="toc__link" href="#fit-study-doesnt-stay-on-screen-while-i-scroll">Fit study doesn't stay on screen while I scroll</a><a class="toc__link" href="#my-hero-video-looks-blurry-on-desktop">My Hero video looks blurry on desktop</a><a class="toc__link" href="#my-hero-video-shows-a-still-image-instead-of-playing">My Hero video shows a still image instead of playing</a><a class="toc__link" href="#the-countdown-ends-at-a-different-time-for-different-customers">The countdown ends at a different time for different customers</a>
        </nav>
     <div class="prose"><h3 id="my-section-title-is-hidden-behind-the-header">My section title is hidden behind the header</h3>
 <p>Your header is set to <strong>Over content</strong>. Turn on <strong>Offset for overlay header</strong> (or <strong>Add space for transparent header</strong>) on the section, which adds top padding equal to the header height.</p>
@@ -52,6 +52,10 @@
 <h3 id="fit-study-doesnt-stay-on-screen-while-i-scroll">Fit study doesn't stay on screen while I scroll</h3>
 <p>It holds only when <strong>Motion</strong> is <em>Draw as the page scrolls</em>, the screen is at least 990px wide, and the whole section fits on the screen below the header. The photo is always sized to fit, so what makes it too tall is the column beside it, which can happen on a laptop. It then plays once as it comes into view instead. A shorter <strong>Text</strong>, fewer measurements, or turning off <strong>Show "View full details" link</strong> usually brings it back.</p>
 <p>If the lines don't draw at all, it's the reduced-motion preference described in <em>Animations aren't playing for me</em>: those visitors see the measurements finished.</p>
+<h3 id="my-hero-video-looks-blurry-on-desktop">My Hero video looks blurry on desktop</h3>
+<p>The video is probably portrait, or smaller than the screen. Hero video fills the section's width, so a portrait clip is enlarged to cover it. Upload a landscape clip, ideally 1920×1080, as the <strong>Video</strong>, and put the portrait one in <strong>Mobile video</strong>.</p>
+<h3 id="my-hero-video-shows-a-still-image-instead-of-playing">My Hero video shows a still image instead of playing</h3>
+<p>That's the <strong>Cover image</strong>, or the video's own preview image if you left the cover empty. The video takes over once the page has finished loading and the section is on screen. It stays on the image for visitors who turn off motion in their system settings, and when the phone's low power mode or data saver stops videos from playing.</p>
 <h3 id="the-countdown-ends-at-a-different-time-for-different-customers">The countdown ends at a different time for different customers</h3>
 <p>By design. The countdown runs in each visitor's <strong>local</strong> timezone, so "ends at 23:59" means their 23:59. If you need one global moment for everyone, a countdown isn't the right tool.</p></div>
     <nav class="pager">

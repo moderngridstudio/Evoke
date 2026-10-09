@@ -150,6 +150,14 @@ It holds only when **Motion** is *Draw as the page scrolls*, the screen is at le
 
 If the lines don't draw at all, it's the reduced-motion preference described in *Animations aren't playing for me*: those visitors see the measurements finished.
 
+### My Hero video looks blurry on desktop
+
+The video is probably portrait, or smaller than the screen. Hero video fills the section's width, so a portrait clip is enlarged to cover it. Upload a landscape clip, ideally 1920×1080, as the **Video**, and put the portrait one in **Mobile video**.
+
+### My Hero video shows a still image instead of playing
+
+That's the **Cover image**, or the video's own preview image if you left the cover empty. The video takes over once the page has finished loading and the section is on screen. It stays on the image for visitors who turn off motion in their system settings, and when the phone's low power mode or data saver stops videos from playing.
+
 ### The countdown ends at a different time for different customers
 
 By design. The countdown runs in each visitor's **local** timezone, so "ends at 23:59" means their 23:59. If you need one global moment for everyone, a countdown isn't the right tool.

@@ -61,9 +61,9 @@ Also here: body text size, heading letter case, and the button type settings.
 
 **Customize** with the **Home page** template selected.
 
-Click **Add section** to see the 42 sections you can place anywhere. A common opening sequence:
+Click **Add section** to see the 43 sections you can place anywhere. A common opening sequence:
 
-1. **Slideshow** or **Image with text overlay** — the hero
+1. **Slideshow**, **Hero video** or **Image with text overlay** — the hero
 2. **Featured collection**, **Featured collection tabs** or **Collection list** — what you sell
 3. **Fit study** — one product measured on its photo, so shoppers can see how it fits
 4. **Collage** — an editorial break with mixed content
@@ -112,6 +112,21 @@ Each line is a **Measurement** block, up to six. Give it a **Label** (Chest), a 
 The section only holds on screen when the screen is at least 990px wide and the whole section fits on it; otherwise it plays once. Visitors who turn off motion in their system settings, and stores with **Theme settings → Animations → Enable theme animations** off, see it finished.
 
 On the product template, each **Value** can be connected to a product metafield, so every product shows its own measurements. The lines stay in the same place for every product, so this works best when products are photographed the same way.
+
+### Working with Hero video
+
+Hero video plays a muted, looping video behind your text, either as the hero at the top of the page or as a band further down. It has Slideshow's controls, so up to five **Video** blocks can take turns, each with its own text, buttons, position and colors.
+
+- **Video** and **Mobile video** — a landscape clip for desktop and, if you have one, a portrait clip for screens narrower than 768px. Keep each short, around 10 MB or less. A 1920×1080 clip stays sharp on large screens; a portrait clip is enlarged to fill a desktop screen and looks soft.
+- **Cover image** — shows while the video loads, and in its place for visitors who turn off motion. Leave it empty to use the video's preview image.
+- **Section height** — the Slideshow sizes, or **Custom** with its own pixel slider for desktop and for mobile. A band further down a page usually looks right at around 800px on desktop and 520px on mobile.
+- **Subheading** — a short line above the heading, such as the collection or campaign name.
+- **Overlay area** — *Behind the text* shades only the side the text sits on and leaves the rest of the video bright. *Whole video* tints all of it evenly. **Overlay opacity** sets how strong either one is.
+- **Change slides** — *When shoppers choose*, *After a set time*, or *When each video ends*, where each video plays through once and the bars follow its progress. A slide without a video moves on after **Change slides every**.
+- **Parallax** — how far the video drifts as the section scrolls past. *None* keeps it still.
+- **Show pause button** — off by default. Turn it on to let visitors stop the video and the slide changes.
+
+The video starts once the rest of the page has loaded, so the cover image shows first, and only the slide on screen plays, only while the section is in view. When the section isn't the first on the page, its text animation waits until the section scrolls into view. Visitors who turn off motion in their system settings see the cover image without parallax, and **Theme settings → Animations → Enable theme animations** off removes the parallax and text animation for everyone.
 
 ### Working with Collage
 

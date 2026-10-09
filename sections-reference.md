@@ -35,6 +35,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Gallery](#gallery)
 - [Gift card](#gift-card)
 - [Header](#header)
+- [Hero video](#hero-video)
 - [Image with text](#image-with-text)
 - [Image with text overlay](#image-with-text-overlay)
 - [Info columns](#info-columns)
@@ -2585,6 +2586,124 @@ _No section-level settings._
 | Show price | On / off |  | true |  |
 | Show "Shop all" link | On / off |  | true |  |
 | "Shop all" link text | Text |  | Shop all |  |
+
+---
+
+## Hero video
+
+*File: `sections/hero-video.liquid`* — **Add via theme editor**
+
+### Settings
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Desktop**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Section height | Choice | Original · Small · Medium · Large · Extra large · Full screen · Custom | x-large |  |
+| Custom height | Slider | 360–1200 px | 800 |  |
+
+
+**Mobile**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Section height | Choice | Original · Small · Medium · Large · Extra large · Full screen · Custom | x-large |  |
+| Custom height | Slider | 240–900 px | 520 |  |
+
+
+**Slides**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Slide navigation style | Choice | None · Arrows · Bars · Dots | dots |  |
+| Change slides | Choice | When shoppers choose · After a set time · When each video ends | manual | With one video, it loops. A slide without a video moves on after the set time. |
+| Change slides every | Slider | 3–15 s | 6 |  |
+| Show pause button | On / off |  | false | Lets visitors stop the video and the slide changes. |
+
+
+**Animation**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Parallax | Choice | None · Subtle · Medium · Strong | medium | How far the video drifts as the section scrolls past. Off for visitors who turn off motion, and when theme animations are off. |
+| Text animation | Choice | None · Fade · Fade up | rise | Plays when the section scrolls into view and each time a slide comes in. Off when animations are turned off in theme settings. |
+
+
+**Content and text**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Bottom content spacing | Slider | 0–160 px | 64 | Extra space between bottom-positioned content and the slide navigation. Increase if text overlaps the dots or arrows. |
+
+
+**Layout**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Width | Choice | Content width · Full width | full |  |
+| Top spacing | Slider | 0–100 px | 0 |  |
+| Bottom spacing | Slider | 0–100 px | 0 |  |
+
+### Blocks
+
+#### Video
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Subheading | Text |  |  |  |
+| Heading | Text |  | Made to move with you. |  |
+| Text | Rich text |  |  |  |
+
+
+**Buttons**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| First button link | Link |  |  |  |
+| First button label | Text |  | Shop now | If the label is empty, the whole slide works as a link. |
+| Second button link | Link |  |  |  |
+| Second button label | Text |  |  |  |
+| Button style | Choice | Filled · Outlined · Underlined | filled |  |
+| Override button colors | On / off |  | false | Turn on to show button color options. |
+| Primary color | Color |  | #FFFFFF |  |
+| Secondary color | Color |  | #35382E | Used for text only when Button style is Filled. |
+
+
+**Desktop**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Video | Video |  |  | Plays muted in the background. A short clip, around 10 MB or less, starts fastest. |
+| Cover image | Image |  |  | Shows while the video loads, and instead of it for visitors who turn off motion. Leave empty to use the video's preview image. |
+| Content position | Choice | Center left · Center · Center right · Bottom left · Bottom · Bottom right | bottom-left |  |
+| Heading font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h1 |  |
+| Body text size | Choice | Small · Medium · Large | body |  |
+
+
+**Mobile**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Mobile video | Video |  |  | For screens narrower than 768px, such as a portrait version. Leave empty to use the desktop video. |
+| Mobile cover image | Image |  |  |  |
+| Content position | Choice | Center left · Center · Center right · Bottom left · Bottom · Bottom right | bottom-left |  |
+| Heading font size | Choice | H1 · H2 · H3 · H4 · H5 · H6 | h2 |  |
+| Body text size | Choice | Small · Medium · Large | body |  |
+
+
+**Color**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Text | Color |  | #FFFFFF |  |
+| Overlay area | Choice | Behind the text · Whole video | text |  |
+| Overlay | Color |  | #262428 |  |
+| Overlay opacity | Slider | 0–100 % | 50 |  |
 
 ---
 

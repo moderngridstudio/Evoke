@@ -12,7 +12,7 @@ This site is the full documentation. If you can't find an answer here, [contact 
 |---|---|
 | **[Getting started](getting-started.md)** | Install the theme, set your logo, colors and fonts, and build your first homepage. |
 | **[Theme settings](theme-settings.md)** | Every store-wide setting: typography, color schemes, product cards, cart, swatches, Quick Look. |
-| **[Sections reference](sections-reference.md)** | All 58 sections and every setting each one has. |
+| **[Sections reference](sections-reference.md)** | All 59 sections and every setting each one has. |
 | **[FAQ](faq.md)** | Common questions and the things people get stuck on. |
 | **[Support](support.md)** | Contact form, what's covered, and response times. |
 
@@ -20,7 +20,7 @@ This site is the full documentation. If you can't find an answer here, [contact 
 
 ## What Evoke includes
 
-**58 sections**, 42 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
+**59 sections**, 43 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
 
 Highlights:
 
@@ -28,6 +28,7 @@ Highlights:
 - **Collage** — a six-block editorial grid mixing images, products, collections, text, video and countdowns
 - **Shop the look** — one styled photograph with the products in it attached, so a whole outfit or room can be bought from a single image
 - **Slideshow** — full-bleed hero slides with separate desktop and mobile art, positioning and typography
+- **Hero video** — a looping background video with parallax, as a hero or a band further down, with Slideshow's slide controls and a separate mobile video
 - **Quick Look** — a product modal that opens from any product card, styled once in Theme settings and reused everywhere
 - **Featured collection** and **Featured collection tabs** — one collection on its own, or several behind a tabbed strip
 - **Blog posts** — recent or hand-picked articles, using the same card as the blog template
