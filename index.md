@@ -12,7 +12,7 @@ This site is the full documentation. If you can't find an answer here, [contact 
 |---|---|
 | **[Getting started](getting-started.md)** | Install the theme, set your logo, colors and fonts, and build your first homepage. |
 | **[Theme settings](theme-settings.md)** | Every store-wide setting: typography, color schemes, product cards, cart, swatches, Quick Look. |
-| **[Sections reference](sections-reference.md)** | All 57 sections and every setting each one has. |
+| **[Sections reference](sections-reference.md)** | All 58 sections and every setting each one has. |
 | **[FAQ](faq.md)** | Common questions and the things people get stuck on. |
 | **[Support](support.md)** | Contact form, what's covered, and response times. |
 
@@ -20,10 +20,11 @@ This site is the full documentation. If you can't find an answer here, [contact 
 
 ## What Evoke includes
 
-**57 sections**, 41 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
+**58 sections**, 42 of which you can add to any page from the theme editor. The rest are the fixed parts of specific templates — the header, the footer, the product page's main section, and so on.
 
 Highlights:
 
+- **Fit study** — a product photo with its measurements drawn on, line by line as the page scrolls, beside the sizes to buy and a cm/in switch
 - **Collage** — a six-block editorial grid mixing images, products, collections, text, video and countdowns
 - **Shop the look** — one styled photograph with the products in it attached, so a whole outfit or room can be bought from a single image
 - **Slideshow** — full-bleed hero slides with separate desktop and mobile art, positioning and typography

@@ -54,6 +54,12 @@ Yes. **Theme settings → Product cards → Show color swatches** (on by default
 
 Cards use the same color option as the product page: one with swatches set in Shopify admin, or one named Color, Colour, Finish or Shade. They also follow **Theme settings → Color swatches → Swatch style**.
 
+With **Product photo**, a color that has no swatch image or color set in Shopify admin uses its own variant image, zoomed in on the garment so the color and print read at this small size. The zoom centres on the image's focal point, so setting a focal point in Shopify admin moves it.
+
+### How do I show a product's measurements?
+
+Add the **Fit study** section. It draws each measurement on a product photo, lists the values beside it with a cm/in switch for shoppers, and shows the product's sizes with an add to cart button. **Working with Fit study** in [Getting started](getting-started.md) covers placing the lines and every setting.
+
 ### How do I show product information in tabs?
 
 In the product section, set **Collapsible tab style** to **Tabs**. **Description**, **Collapsible tab** and **Collapsible tab + image** blocks placed one after another then show as one set of tabs, with the first tab open. Any other block between them starts a new set, and in the two-column layout a set stays within one column.
@@ -137,6 +143,12 @@ Parallax needs a minimum height above **Original** to have anything to move with
 ### Animations aren't playing for me
 
 Same reason: Evoke respects the system-level reduced-motion preference everywhere. If you have it enabled, you'll see the static version. This is an accessibility requirement, not a bug.
+
+### Fit study doesn't stay on screen while I scroll
+
+It holds only when **Motion** is *Draw as the page scrolls*, the screen is at least 990px wide, and the whole section fits on the screen below the header. The photo is always sized to fit, so what makes it too tall is the column beside it, which can happen on a laptop. It then plays once as it comes into view instead. A shorter **Text**, fewer measurements, or turning off **Show "View full details" link** usually brings it back.
+
+If the lines don't draw at all, it's the reduced-motion preference described in *Animations aren't playing for me*: those visitors see the measurements finished.
 
 ### The countdown ends at a different time for different customers
 

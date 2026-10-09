@@ -61,15 +61,16 @@ Also here: body text size, heading letter case, and the button type settings.
 
 **Customize** with the **Home page** template selected.
 
-Click **Add section** to see the 31 sections you can place anywhere. A common opening sequence:
+Click **Add section** to see the 42 sections you can place anywhere. A common opening sequence:
 
 1. **Slideshow** or **Image with text overlay** — the hero
 2. **Featured collection**, **Featured collection tabs** or **Collection list** — what you sell
-3. **Collage** — an editorial break with mixed content
-4. **Shop the look** — a styled photograph with its products attached
-5. **Social proof** — testimonials and rating
-6. **Rich text** or **Brand introduction** — your story
-7. **Blog posts** — recent articles, if you publish them
+3. **Fit study** — one product measured on its photo, so shoppers can see how it fits
+4. **Collage** — an editorial break with mixed content
+5. **Shop the look** — a styled photograph with its products attached
+6. **Social proof** — testimonials and rating
+7. **Rich text** or **Brand introduction** — your story
+8. **Blog posts** — recent articles, if you publish them
 
 Every section has **Top spacing** and **Bottom spacing**. Use these rather than empty sections to control rhythm.
 
@@ -95,6 +96,22 @@ Section-wide controls that apply to every look:
 - **Card style** — *Auto* follows the layout, or force *Compact* (thumbnail beside text) or *Standard* (image above text)
 
 Pick a photograph with the products reasonably separated. Five hotspots on a tightly cropped shot end up overlapping, and no hotspot style fixes that.
+
+### Working with Fit study
+
+Fit study shows one product photo with its measurements drawn on as lines, the same measurements as a list beside it, and the product's sizes with an add to cart button. Pick the **Product**; on a product page, leave it empty to use that page's product.
+
+Each line is a **Measurement** block, up to six. Give it a **Label** (Chest), a **Value** (56) and an optional **Note** (Armpit to armpit), then place it with the **Start** and **End** sliders. They are percentages of the image's width and height from its top left corner. The value tag sits at the end point, and **Value tag** moves it to whichever side is clear. Selecting a block in the theme editor shows its line drawn and highlighted, which makes placing it quick.
+
+- **Image** — replaces the product's first image. A front-on photo on a plain background, or a flat lay, measures most clearly.
+- **Values are in** and **Show cm and in switch** — enter the values in one unit. Shoppers can switch, and every number converts to the nearest half, ranges such as 56–58 included.
+- **Line style** — *Hairline* or *Tape measure*. **Line color** sets every line, and each measurement can have its own.
+- **Motion** — *Draw as the page scrolls* holds the section on screen and draws one line per stretch of scrolling. **Scroll per line** sets how long each line takes, and **Pause when finished** how long the finished drawing stays before the page moves on. *Draw once when shown* plays it through as it comes into view; *Show finished* leaves out the animation.
+- **Show sizes and add to cart** — the product's options, with sold-out sizes crossed out, and an add to cart button that works like the one on the product page. **Model note** sits above them.
+
+The section only holds on screen when the screen is at least 990px wide and the whole section fits on it; otherwise it plays once. Visitors who turn off motion in their system settings, and stores with **Theme settings → Animations → Enable theme animations** off, see it finished.
+
+On the product template, each **Value** can be connected to a product metafield, so every product shows its own measurements. The lines stay in the same place for every product, so this works best when products are photographed the same way.
 
 ### Working with Collage
 

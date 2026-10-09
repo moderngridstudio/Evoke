@@ -30,6 +30,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Featured collection](#featured-collection)
 - [Featured collection tabs](#featured-collection-tabs)
 - [Featured product](#featured-product)
+- [Fit study](#fit-study)
 - [Footer](#footer)
 - [Gallery](#gallery)
 - [Gift card](#gift-card)
@@ -2053,6 +2054,94 @@ _No section-level settings._
 | Bottom spacing | Slider | 0–60 px | 0 |  |
 
 > Supports app blocks — apps you install can add their own content here.
+
+---
+
+## Fit study
+
+*File: `sections/fit-study.liquid`* — **Add via theme editor**
+
+### Settings
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Product | Product |  |  | On a product page, leave empty to use that page's product. |
+| Image | Image |  |  | Replaces the product's first image. A front-on photo on a plain background measures best. |
+| Image ratio | Choice | Adapt to image · Portrait (4:5) · Portrait (3:4) · Square (1:1) | natural |  |
+| Image position | Choice | Left · Right | left |  |
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Heading | Text |  | How it fits |  |
+| Heading size | Choice | H1 · H2 · H3 | h2 |  |
+| Show line under heading | On / off |  | false |  |
+| Text | Rich text |  | &lt;p&gt;Every piece is measured flat, so you know how it sits before it arrives.&lt;/p&gt; |  |
+
+
+**Measurements**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| List title | Text |  | Measurements |  |
+| Note under the list | Text |  | Size M, measured flat |  |
+| Values are in | Choice | Centimeters (cm) · Inches (in) | cm |  |
+| Show cm and in switch | On / off |  | true | Shoppers can switch units. Values convert to the nearest half. |
+| Line style | Choice | Hairline · Tape measure | hairline |  |
+| Line color | Color |  |  | Applies to every line unless a measurement has its own. Leave empty to use the color scheme's text color. |
+| Motion | Choice | Draw as the page scrolls · Draw once when shown · Show finished | scroll | Draw as the page scrolls holds the section on screen while the lines draw, on screens 990px and wider. Smaller screens play it once. Visitors who turn off motion see it finished. |
+| Scroll per line | Slider | 30–90 % | 45 | How far visitors scroll to draw each line, as a share of the screen height. |
+| Pause when finished | Slider | 0–150 % | 80 | How far visitors scroll with every line drawn before the page moves on, as a share of the screen height. |
+
+
+**Sizes and add to cart**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show sizes and add to cart | On / off |  | true |  |
+| Model note | Text |  | Model is 186 cm and wears M |  |
+| Show "View full details" link | On / off |  | true |  |
+
+
+**Section spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Padding top | Slider | 0–120 px | 48 |  |
+| Padding bottom | Slider | 0–120 px | 48 |  |
+
+
+**Mobile**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Padding top | Slider | 0–120 px | 32 |  |
+| Padding bottom | Slider | 0–120 px | 32 |  |
+
+### Blocks
+
+#### Measurement
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Label | Text |  | Chest |  |
+| Value | Text |  | 56 | Numbers count up and convert between cm and in, for example 56 or 56–58. |
+| Note | Text |  | Armpit to armpit |  |
+
+
+**Line on the image**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Start, across | Slider | 0–100 % | 30 |  |
+| Start, down | Slider | 0–100 % | 40 |  |
+| End, across | Slider | 0–100 % | 70 |  |
+| End, down | Slider | 0–100 % | 40 |  |
+| Value tag | Choice | Right of the end · Left of the end · Above the end · Below the end | right |  |
+| Line color | Color |  |  | Leave empty to use the section's line color. |
 
 ---
 

@@ -41,7 +41,7 @@
     <h1 class="doc__title">Products</h1>
     <nav class="toc" aria-label="On this page">
          <p class="toc__title">On this page</p>
-         <a class="toc__link" href="#the-variant-picker-or-quantity-selector-stopped-working">The variant picker or quantity selector stopped working</a><a class="toc__link" href="#stock-levels-arent-showing">Stock levels aren't showing</a><a class="toc__link" href="#product-ratings-arent-showing">Product ratings aren't showing</a><a class="toc__link" href="#color-swatches-are-showing-the-wrong-color">Color swatches are showing the wrong color</a><a class="toc__link" href="#complementary-products-arent-appearing">Complementary products aren't appearing</a><a class="toc__link" href="#can-each-product-have-its-own-size-chart">Can each product have its own size chart?</a><a class="toc__link" href="#can-each-product-have-its-own-faqs">Can each product have its own FAQs?</a>
+         <a class="toc__link" href="#the-variant-picker-or-quantity-selector-stopped-working">The variant picker or quantity selector stopped working</a><a class="toc__link" href="#stock-levels-arent-showing">Stock levels aren't showing</a><a class="toc__link" href="#product-ratings-arent-showing">Product ratings aren't showing</a><a class="toc__link" href="#color-swatches-are-showing-the-wrong-color">Color swatches are showing the wrong color</a><a class="toc__link" href="#can-product-cards-show-color-swatches">Can product cards show color swatches?</a><a class="toc__link" href="#how-do-i-show-a-products-measurements">How do I show a product's measurements?</a><a class="toc__link" href="#how-do-i-show-product-information-in-tabs">How do I show product information in tabs?</a><a class="toc__link" href="#complementary-products-arent-appearing">Complementary products aren't appearing</a><a class="toc__link" href="#can-each-product-have-its-own-size-chart">Can each product have its own size chart?</a><a class="toc__link" href="#can-each-product-have-its-own-faqs">Can each product have its own FAQs?</a><a class="toc__link" href="#how-do-i-add-my-own-badges-like-best-seller">How do I add my own badges, like "Best seller"?</a>
        </nav>
     <div class="prose"><h3 id="the-variant-picker-or-quantity-selector-stopped-working">The variant picker or quantity selector stopped working</h3>
 <p>The <strong>buy buttons</strong> block carries the form both of them submit to. If it's been removed from the product section, add it back.</p>
@@ -52,6 +52,14 @@
 <h3 id="color-swatches-are-showing-the-wrong-color">Color swatches are showing the wrong color</h3>
 <p>Set swatch images or colors per option value in Shopify admin — those always take priority over the theme's swatch style.</p>
 <p>If you're relying on the theme to draw swatches, use <strong>Product photo</strong> rather than a color chip. A color named "Blue" on a teal garment, or a name like "Ocean Drift" that isn't a CSS color, can't be drawn accurately as a chip.</p>
+<h3 id="can-product-cards-show-color-swatches">Can product cards show color swatches?</h3>
+<p>Yes. <strong>Theme settings → Product cards → Show color swatches</strong> (on by default) adds a row of swatches under the price for products in two colors or more. Choosing one shows that color's image on the card and opens the product in that color. <strong>Maximum swatches</strong> sets how many show; the rest appear as a count, such as +3.</p>
+<p>Cards use the same color option as the product page: one with swatches set in Shopify admin, or one named Color, Colour, Finish or Shade. They also follow <strong>Theme settings → Color swatches → Swatch style</strong>.</p>
+<p>With <strong>Product photo</strong>, a color that has no swatch image or color set in Shopify admin uses its own variant image, zoomed in on the garment so the color and print read at this small size. The zoom centres on the image's focal point, so setting a focal point in Shopify admin moves it.</p>
+<h3 id="how-do-i-show-a-products-measurements">How do I show a product's measurements?</h3>
+<p>Add the <strong>Fit study</strong> section. It draws each measurement on a product photo, lists the values beside it with a cm/in switch for shoppers, and shows the product's sizes with an add to cart button. <strong>Working with Fit study</strong> in <a href="../../getting-started/index.html">Getting started</a> covers placing the lines and every setting.</p>
+<h3 id="how-do-i-show-product-information-in-tabs">How do I show product information in tabs?</h3>
+<p>In the product section, set <strong>Collapsible tab style</strong> to <strong>Tabs</strong>. <strong>Description</strong>, <strong>Collapsible tab</strong> and <strong>Collapsible tab + image</strong> blocks placed one after another then show as one set of tabs, with the first tab open. Any other block between them starts a new set, and in the two-column layout a set stays within one column.</p>
 <h3 id="complementary-products-arent-appearing">Complementary products aren't appearing</h3>
 <p>Complementary products are configured in Shopify's <strong>Search &amp; Discovery</strong> app. Related products are chosen automatically from order history and product data, and need no setup — but new stores often have no data yet.</p>
 <p>If the section is empty on a new store, turn on <strong>Fall back to the product's collection</strong> so it shows other products from the same collection instead of hiding.</p>
@@ -61,7 +69,10 @@
 <h3 id="can-each-product-have-its-own-faqs">Can each product have its own FAQs?</h3>
 <p>Yes. Add a <code>custom.faqs</code> metafield of type <strong>Metaobject reference → Product FAQ</strong> with <strong>List of values</strong> turned on, so questions can be written once and attached to many products. For a one-off, <code>custom.faqs_text</code> takes one <code>Question | Answer</code> per line.</p>
 <p>A product with FAQs of its own shows only those, whether or not <strong>Show FAQ section</strong> is on. Full walkthrough in <a href="../../product-content/index.html">Product content</a>.</p>
-<p>FAQs appear inside <strong>Quick Look</strong>, not on the product page.</p></div>
+<p>FAQs appear inside <strong>Quick Look</strong>, not on the product page.</p>
+<h3 id="how-do-i-add-my-own-badges-like-best-seller">How do I add my own badges, like "Best seller"?</h3>
+<p>Tag the product <code>badge:Best seller</code>. The text after the prefix becomes a badge on product cards, the product page and Quick look, up to two per product. Change or clear the prefix in <strong>Theme settings → Product cards → Custom badge tag prefix</strong>.</p>
+<p>Tags aren't translated, so a custom badge reads the same in every language. The <strong>"New" badge tag</strong> setting works the same way, but its badge text is translated.</p></div>
     <nav class="pager">
           <a class="pager__link pager__link--prev" href="../../faq/setup/index.html">
                    <span class="pager__dir">Previous</span><span class="pager__title">Setup</span></a>
