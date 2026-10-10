@@ -158,6 +158,10 @@ The video is probably portrait, or smaller than the screen. Hero video fills the
 
 That's the **Cover image**, or the video's own preview image if you left the cover empty. The video takes over once the page has finished loading and the section is on screen. It stays on the image for visitors who turn off motion in their system settings, and when the phone's low power mode or data saver stops videos from playing.
 
+### Thread line's steps only appear when I scroll to them
+
+That's **Motion** → *Sew as the page scrolls*: each step comes in as the thread reaches it, about two thirds of the way down the screen. Choose *Show finished* to show every step and the whole thread at once, or *Sew once when shown* to sew it through by itself as the section comes into view.
+
 ### The countdown ends at a different time for different customers
 
 By design. The countdown runs in each visitor's **local** timezone, so "ends at 23:59" means their 23:59. If you need one global moment for everyone, a countdown isn't the right tool.

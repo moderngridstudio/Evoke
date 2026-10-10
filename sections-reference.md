@@ -63,6 +63,7 @@ Sections marked **Add via theme editor** can be added to any page from *Customiz
 - [Social feed](#social-feed)
 - [Social proof](#social-proof)
 - [Testimonials](#testimonials)
+- [Thread line](#thread-line)
 - [Video](#video)
 - [Video popup](#video-popup)
 
@@ -4902,6 +4903,82 @@ _No section-level settings._
 
 ---
 
+## Thread line
+
+*File: `sections/thread-line.liquid`* — **Add via theme editor**
+
+### Settings
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Color scheme | Color scheme |  | scheme-1 |  |
+
+
+**Heading**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Subheading | Text |  | From field to wardrobe |  |
+| Heading | Text |  | How it's made |  |
+| Heading size | Choice | H1 · H2 · H3 | h2 |  |
+| Show line under heading | On / off |  | false |  |
+| Text | Rich text |  | &lt;p&gt;One shirt, every step it takes, and the people who make it.&lt;/p&gt; |  |
+| Heading alignment | Choice | Left · Center | center |  |
+
+
+**Thread**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Layout (desktop) | Choice | Alternate sides · Thread on the left | alternate | On phones the thread always runs down the left. |
+| Thread style | Choice | Running stitch · Solid | running |  |
+| Thread color | Color |  |  | Leave empty to use the color scheme's text color. |
+| Thread thickness | Slider | 1–4 px | 2 |  |
+| Curve | Choice | Straight · Gentle · Wide | gentle |  |
+| Show needle | On / off |  | true |  |
+| Show step numbers | On / off |  | true |  |
+| Motion | Choice | Sew as the page scrolls · Sew once when shown · Show finished | scroll | Sew as the page scrolls follows the page and comes undone if it scrolls back up. Visitors who turn off motion, and stores with theme animations off, see it sewn. |
+
+
+**Media**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Show images | On / off |  | true |  |
+| Image ratio | Choice | Adapt to image · Portrait (4:5) · Square (1:1) · Landscape (3:2) | portrait |  |
+| Size | Choice | Small · Medium · Large | medium |  |
+
+
+**Section spacing**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Padding top | Slider | 0–120 px | 48 |  |
+| Padding bottom | Slider | 0–120 px | 48 |  |
+
+
+**Mobile**
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Padding top | Slider | 0–120 px | 32 |  |
+| Padding bottom | Slider | 0–120 px | 32 |  |
+
+### Blocks
+
+#### Step
+
+| Setting | Type | Options | Default | Notes |
+|---|---|---|---|---|
+| Image | Image |  |  |  |
+| Label | Text |  | Porto, Portugal | A place, date or detail, such as Porto, Portugal. |
+| Heading | Text |  | Spun and woven |  |
+| Text | Rich text |  | &lt;p&gt;Spun into a fine yarn, then woven into a dense, soft twill.&lt;/p&gt; |  |
+| Link label | Text |  |  |  |
+| Link | Link |  |  |  |
+
+---
+
 ## Video
 
 *File: `sections/video.liquid`* — **Add via theme editor**
@@ -4973,6 +5050,7 @@ _No section-level settings._
 | Setting | Type | Options | Default | Notes |
 |---|---|---|---|---|
 | Video alt text | Text |  |  | Describes the video for people who use screen readers. |
+| Play muted when opened | On / off |  | true | Visitors can turn the sound on with the player's controls. |
 
 
 **Widget**

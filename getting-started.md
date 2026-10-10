@@ -61,16 +61,17 @@ Also here: body text size, heading letter case, and the button type settings.
 
 **Customize** with the **Home page** template selected.
 
-Click **Add section** to see the 43 sections you can place anywhere. A common opening sequence:
+Click **Add section** to see the 44 sections you can place anywhere. A common opening sequence:
 
 1. **Slideshow**, **Hero video** or **Image with text overlay** — the hero
 2. **Featured collection**, **Featured collection tabs** or **Collection list** — what you sell
 3. **Fit study** — one product measured on its photo, so shoppers can see how it fits
-4. **Collage** — an editorial break with mixed content
-5. **Shop the look** — a styled photograph with its products attached
-6. **Social proof** — testimonials and rating
-7. **Rich text** or **Brand introduction** — your story
-8. **Blog posts** — recent articles, if you publish them
+4. **Thread line** — how your pieces are made, step by step
+5. **Collage** — an editorial break with mixed content
+6. **Shop the look** — a styled photograph with its products attached
+7. **Social proof** — testimonials and rating
+8. **Rich text** or **Brand introduction** — your story
+9. **Blog posts** — recent articles, if you publish them
 
 Every section has **Top spacing** and **Bottom spacing**. Use these rather than empty sections to control rhythm.
 
@@ -127,6 +128,20 @@ Hero video plays a muted, looping video behind your text, either as the hero at 
 - **Show pause button** — off by default. Turn it on to let visitors stop the video and the slide changes.
 
 The video starts once the rest of the page has loaded, so the cover image shows first, and only the slide on screen plays, only while the section is in view. When the section isn't the first on the page, its text animation waits until the section scrolls into view. Visitors who turn off motion in their system settings see the cover image without parallax, and **Theme settings → Animations → Enable theme animations** off removes the parallax and text animation for everyone.
+
+### Working with Thread line
+
+Thread line tells a story in steps, such as how a piece is made, where its fabric comes from, or how an order reaches your customer, joined by one stitched thread. As the page scrolls, the thread is sewn down the section with a needle leading it. Each step comes in beside the thread as it arrives, and a cross stitch ties the step's marker.
+
+Each step is a **Step** block, up to eight. It has an **Image**, a **Label** for a place, date or detail (Porto, Portugal), a **Heading**, **Text**, and an optional link with its **Link label**. Steps are numbered 01, 02 and so on in their order; turn off **Show step numbers** to leave the numbers out.
+
+- **Layout (desktop)** — *Alternate sides* runs the thread down the middle, with the image and text swapping sides at each step. *Thread on the left* keeps every step to its right. On phones the thread always runs down the left, with each step's text above its image.
+- **Thread style** — *Running stitch* or *Solid*. **Thread color** (leave it empty to use the color scheme's text color), **Thread thickness**, and **Curve**, how much the thread weaves between steps.
+- **Show needle** — the needle that leads the thread.
+- **Motion** — *Sew as the page scrolls* follows the page, and the thread comes undone if the page scrolls back up, while steps that have come in stay. *Sew once when shown* sews the whole thread as the section comes into view. *Show finished* shows it sewn.
+- **Show images**, **Image ratio** and **Size** — turn images off for a list of steps in text only.
+
+Selecting a step in the theme editor sews the thread down to it and shows it. Visitors who turn off motion in their system settings, and stores with **Theme settings → Animations → Enable theme animations** off, see the thread sewn and every step showing.
 
 ### Working with Collage
 
